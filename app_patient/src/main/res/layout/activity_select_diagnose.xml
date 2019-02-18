@@ -1,0 +1,79 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_unfollow"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/diagnose_can_buy"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/second_text_color"
+        android:textSize="@dimen/big_font_size"
+        />
+    <View
+        android:id="@+id/title_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_size"
+        android:layout_below="@id/tv_title"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/cancel2"
+            android:textColor="@color/second_text_color"
+            android:textSize="@dimen/middle_font_size"
+            />
+
+        <View
+            android:layout_width="@dimen/divide_size"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_title"
+            android:background="@color/divider" />
+
+        <TextView
+            android:id="@+id/tv_buy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/buy"
+            android:textColor="@color/second_text_color"
+            android:textSize="@dimen/middle_font_size"
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/btn_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_size"
+        android:layout_above="@id/ll_btn"
+        android:background="@color/divider" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_line"
+        android:layout_below="@id/title_line"
+        android:divider="@color/divider"
+        android:dividerHeight="@dimen/divide_size"
+        />
+
+
+</RelativeLayout>

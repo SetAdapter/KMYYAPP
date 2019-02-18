@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View style="@style/dividing_line"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_color_white"
+                android:padding="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/string_recipename"
+                    android:textSize="@dimen/big_font_size"/>
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/string_recipe_hint"
+                    android:textColorHint="@color/color_tag_string"
+                    android:textColor="@color/color_main_string"
+                    android:textSize="@dimen/big_font_size"
+                    android:background="@null"/>
+            </LinearLayout>
+
+            <View style="@style/dividing_line"
+                android:layout_marginBottom="10dp"/>
+
+            <doctor.kmwlyy.com.recipe.View.MyListView
+                android:id="@+id/lv_cn_druglist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </doctor.kmwlyy.com.recipe.View.MyListView>
+
+            <doctor.kmwlyy.com.recipe.View.MyListView
+                android:id="@+id/lv_en_druglist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </doctor.kmwlyy.com.recipe.View.MyListView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_primary_color">#0accce</color>
+    <color name="app_primary_dark_color">#45b9de</color>
+
+    <!-- 默认背影 灰 -->
+    <color name="common_bg">#F0F0F0</color>
+    <!-- 描边 -->
+    <color name="common_stroke">#d5d5d5</color>
+    <!-- 菜单分隔线 -->
+    <color name="common_menu_line">#4c555f</color>
+
+    <!-- 深深灰 -->
+    <color name="common_text1">#333333</color>
+    <!-- 深灰 -->
+    <color name="common_text2">#666666</color>
+    <!-- 浅灰 -->
+    <color name="common_text3">#999999</color>
+    <!-- 浅浅灰 -->
+    <color name="common_text4">#cccccc</color>
+
+    <color name="full_state">#ff978c</color>
+
+</resources>

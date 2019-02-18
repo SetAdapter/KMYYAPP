@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+                android:background="@color/color_main_bg"
+              android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/common_titlebar"
+        layout="@layout/common_titlebar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/common_titlebar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_text_top_color"
+                android:textSize="18sp"
+                android:text="签约通知"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingLeft="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/SignatureUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_text_top_color"
+                android:textSize="18sp"
+                android:text=""/>
+            <TextView
+                android:id="@+id/CreateTime"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_text_top_color"
+                android:textSize="16sp"
+                android:text=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_shape_ll"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/app_text_top_color"
+                android:text="签约详情"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dcdcdc"/>
+
+            <LinearLayout
+                android:paddingLeft="24dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_text_top_color"
+                    android:textSize="16sp"
+                    android:text="签约医生："/>
+                <TextView
+                    android:id="@+id/FDGroupName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_text_top_color"
+                    android:textSize="16sp"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="24dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_text_top_color"
+                    android:textSize="16sp"
+                    android:text="签约用户："/>
+                <TextView
+                    android:id="@+id/SignatureUserName_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_text_top_color"
+                    android:textSize="16sp"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="24dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_text_top_color"
+                    android:textSize="16sp"
+                    android:text="签约时间："/>
+                <TextView
+                    android:id="@+id/CreateTime_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_text_top_color"
+                    android:textSize="16sp"
+                    android:text=""/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_btn_default"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:text="我知道了"/>
+</RelativeLayout>

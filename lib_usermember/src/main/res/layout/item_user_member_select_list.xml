@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="@dimen/list_padding"
+    android:paddingLeft="@dimen/app_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="@dimen/list_padding">
+
+        <TextView
+            android:id="@+id/tv_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="[默认]"
+            android:textStyle="bold"
+            android:textColor="@color/primary_color"
+            android:textSize="@dimen/middle_font_size"
+            />
+
+        <TextView
+            android:id="@+id/member_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="100dp"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/middle_font_size" />
+
+        <TextView
+            android:id="@+id/member_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="男"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/middle_font_size" />
+
+        <TextView
+            android:id="@+id/tv_birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2017-10-1"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:textColor="@color/third_text_color"
+            android:textSize="@dimen/mini_font_size"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机号码: "
+        android:textColor="@color/second_text_color"
+        android:textSize="@dimen/small_font_size"
+        />
+
+    <TextView
+        android:id="@+id/tv_idCard_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="身份证号: "
+        android:textColor="@color/second_text_color"
+        android:textSize="@dimen/small_font_size"
+        />
+
+</LinearLayout>

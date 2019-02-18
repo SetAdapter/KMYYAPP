@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background"
+              android:orientation="vertical">
+
+
+    <include layout="@layout/app_base_title"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/about_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:text="@string/app_name"
+        android:textColor="@color/primary_color"
+        android:textSize="@dimen/large_font_size" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_size"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/soft_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/app_padding"
+            android:text="@string/soft_introduce"
+            android:textSize="@dimen/middle_font_size" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_size"
+            android:layout_marginLeft="@dimen/app_padding"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/list_item_height"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/app_padding"
+                android:text="@string/liscense_info"
+                android:textSize="@dimen/middle_font_size" />
+
+            <TextView
+                android:id="@+id/version_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:paddingRight="@dimen/list_padding"
+                android:textColor="@color/primary_color"
+                android:textSize="@dimen/middle_font_size" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_size"
+        android:background="@color/divider" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="3dp"
+        android:text="@string/kangmei"
+        android:textColor="@color/third_text_color"
+        android:textSize="@dimen/mini_font_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:text="@string/kangmei_english"
+        android:textColor="@color/third_text_color"
+        android:textSize="@dimen/micro_font_size" />
+
+
+</LinearLayout>

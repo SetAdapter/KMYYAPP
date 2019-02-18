@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_charge"
+            android:singleLine="true"
+            android:text="名称"
+            android:textColor="@color/common_text2"
+            android:textSize="@dimen/big_font_size"/>
+        <TextView
+            android:id="@+id/tv_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/btn_commit"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:text="@string/r_price"
+            android:textColor="@color/common_text1"
+            android:textSize="@dimen/big_font_size"/>
+        <Button
+            android:id="@+id/btn_commit"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_btn_default"
+            android:text="@string/r_reg"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/big_font_size"/>
+    </RelativeLayout>
+    <View android:layout_width="match_parent"
+          android:layout_height="1px"
+          android:background="@color/common_stroke"/>
+</LinearLayout>

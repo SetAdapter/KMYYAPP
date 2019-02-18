@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:id="@+id/fl_expert_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/app_padding"
+            android:text="@string/expert_recommend" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/app_padding"
+            android:background="@drawable/next_unselect" />
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_size"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/tv_clinic_none"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/none_expert_recommend"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:background="@color/white"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_clinic_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="13.44dp"
+        android:paddingTop="13.44dp"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_clinic_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_clinic_one"
+                android:layout_width="@dimen/avatar_size"
+                android:layout_height="@dimen/avatar_size"
+                android:background="@drawable/default_avatar" />
+
+            <TextView
+                android:id="@+id/tv_clinic_one_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/small_font_size" />
+
+            <TextView
+                android:id="@+id/tv_clinic_one_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/second_text_color"
+                android:textSize="@dimen/mini_font_size" />
+
+            <TextView
+                android:id="@+id/tv_clinic_one_hospital_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:textColor="@color/second_text_color"
+                android:textSize="@dimen/mini_font_size" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/divide_size"
+            android:layout_height="match_parent"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:id="@+id/ll_clinic_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_clinic_two"
+                android:layout_width="@dimen/avatar_size"
+                android:layout_height="@dimen/avatar_size"
+                android:background="@drawable/default_avatar" />
+
+            <TextView
+                android:id="@+id/tv_clinic_two_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/small_font_size" />
+
+            <TextView
+                android:id="@+id/tv_clinic_two_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/second_text_color"
+                android:textSize="@dimen/mini_font_size" />
+
+            <TextView
+                android:id="@+id/tv_clinic_two_hospital_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:maxLines="2"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/second_text_color"
+                android:textSize="@dimen/mini_font_size" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/divide_size"
+            android:layout_height="match_parent"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:id="@+id/ll_clinic_three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_clinic_three"
+                android:layout_width="@dimen/avatar_size"
+                android:layout_height="@dimen/avatar_size"
+                android:background="@drawable/default_avatar" />
+
+            <TextView
+                android:id="@+id/tv_clinic_three_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/small_font_size" />
+
+            <TextView
+                android:id="@+id/tv_clinic_three_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textColor="@color/second_text_color"
+                android:textSize="@dimen/mini_font_size" />
+
+            <TextView
+                android:id="@+id/tv_clinic_three_hospital_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:maxLines="2"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/second_text_color"
+                android:textSize="@dimen/mini_font_size" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/divide_size"
+            android:layout_height="match_parent"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:id="@+id/ll_clinic_four"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_clinic_four"
+                android:layout_width="@dimen/avatar_size"
+                android:layout_height="@dimen/avatar_size"
+                android:background="@drawable/default_avatar" />
+
+            <TextView
+                android:id="@+id/tv_clinic_four_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/small_font_size" />
+
+            <TextView
+                android:id="@+id/tv_clinic_four_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:maxLines="2"
+                android:textColor="@color/second_text_color"
+                android:textSize="@dimen/mini_font_size" />
+
+            <TextView
+                android:id="@+id/tv_clinic_four_hospital_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:maxLines="2"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/second_text_color"
+                android:textSize="@dimen/mini_font_size" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

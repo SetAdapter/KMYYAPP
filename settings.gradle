@@ -1,0 +1,5 @@
+include ':app_doctor', ':app_patient', ':lib_login', ':lib_recipe', ':lib_registry', ':lib_address', ':lib_usermember', ':lib_3rd:ViewPagerIndicatorLib', ':lib_personinfo', ':lib_ywq', ':lib_pdfread','cptr', ':lib_res', ':expandlv';
+include ':lib:core', ':lib:ui',':cptr';
+include ':lib_sdk:agora', ':lib_sdk:imchat';
+include ':lib_3rd:WheelPicker', ':lib_3rd:pagerSlidingTabStrip';
+//include ':lib_sdk:timchat', ':lib_sdk:timchat_v', ':lib_sdk:timchat_p', ':lib_sdk:timchat_sdk', ':lib_sdk:timchat_tls';

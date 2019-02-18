@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/layout_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="时间"
+            android:textColor="@color/common_text1"
+            android:textSize="@dimen/middle_font_size"/>
+
+        <TextView
+            android:id="@+id/tv_default"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:singleLine="true"
+            android:text="[默认]"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textColor="@color/color_main_green"
+            android:textSize="@dimen/middle_font_size"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_toLeftOf="@id/tv_time"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_default"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="标题"
+            android:textColor="@color/common_text1"
+            android:textSize="@dimen/big_font_size"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:text="内容"
+            android:textColor="@color/common_text1"
+            android:textSize="@dimen/middle_font_size"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/common_stroke"
+        android:visibility="visible"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="5dp"
+        android:background="@color/common_stroke"
+        android:visibility="visible"/>
+</LinearLayout>

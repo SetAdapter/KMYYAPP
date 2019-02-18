@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title" />
+    <!--交通地址-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/traffic_address"
+            android:textColor="#666666"
+            android:textSize="@dimen/large_font_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_shape"
+            android:orientation="horizontal"
+            android:paddingRight="20dp">
+
+            <EditText
+                android:cursorVisible="true"
+                android:id="@+id/et_traffic_address"
+                style="@style/edit_setting"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:hint="@string/location_address"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:minLines="2"
+                android:paddingLeft="10dp" />
+
+            <!--<ImageView
+
+                android:id="@+id/iv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/img_location" />-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--诊室地址-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/clinic_address"
+            android:textColor="#666666"
+            android:textSize="@dimen/large_font_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_shape"
+            android:orientation="horizontal"
+            android:paddingRight="20dp">
+
+            <EditText
+
+                android:id="@+id/et_clinic_adderss"
+                style="@style/edit_setting"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:hint="@string/input_address"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:minLines="2"
+                android:paddingLeft="10dp"
+
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

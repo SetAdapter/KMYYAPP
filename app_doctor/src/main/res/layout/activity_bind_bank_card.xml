@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    android:background="@color/color_main_bg"
+    >
+
+    <include layout="@layout/app_base_title"/>
+
+    <ScrollView
+        android:id="@+id/scrollView_cer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/tv_content_black"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/string_bank_string" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/listview_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_bankName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:background="@drawable/et_bg"
+                    android:drawableRight="@mipmap/icon_arrow_down1"
+                    android:hint="@string/string_bank_name"
+                    android:textColor="@color/color_main_string"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="5dp"
+                    android:textSize="@dimen/big_font_size"/>
+
+                <EditText
+                    android:id="@+id/bankCard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:background="@drawable/et_bg"
+                    android:drawableRight="@mipmap/icon_fill"
+                    android:hint="@string/string_bank_card_num"
+                    android:textSize="@dimen/big_font_size"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+                    android:paddingLeft="5dp" />
+
+                <EditText
+                    android:id="@+id/openbank"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="@dimen/big_font_size"
+                    android:background="@drawable/et_bg"
+                    android:drawableRight="@mipmap/icon_fill"
+                    android:hint="@string/string_bank_add" />
+
+                <EditText
+                    android:id="@+id/userName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="@dimen/big_font_size"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/et_bg"
+                    android:drawableRight="@mipmap/icon_fill"
+                    android:hint="@string/string_bank_account_name" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_bind"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/btn_green_corner_bg"
+                android:text="@string/string_bank_bind"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

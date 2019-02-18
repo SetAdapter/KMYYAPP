@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/app_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="“康美医疗”是康美健康云旗下网络医院服务平台的用户端。用户可通过在线问诊交流模式，精准的数据健康管理机制，专业轻松的就医体验，快速解决各种健康问题。"
+                android:textColor="@color/third_text_color"
+                android:textSize="@dimen/middle_font_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="【主要功能】"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/middle_font_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:text="1、"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:text="在线问诊：用户通过购买图文/语音/视频咨询服务后，在预约的时间内可以直接和医生交流，成功实现足不出户，在家就能看诊了；"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:text="2、"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:text="预约挂号：抛弃以往图形导诊过于专业化的疾病名词，从患者实际体验出发，改用以用户为核心的交互模式，帮助患者完成初步分诊，确定挂号科室医生，克服了排号难，时间长的医疗困难；"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size"
+                    android:id="@+id/textView"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:text="3、"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:text="远程会诊：跨越地域障碍，实现了利用城市医疗技术优势为边远地区群众服务，这样既提高了医疗时效，又降低了医疗成本，也减轻因长途转诊所致的就医费用；"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:text="4、"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:text="家庭医生：以家庭为单位，覆盖老人和小孩，一人注册账户，意味着一个家庭都可以享受康美医疗APP带来的方便、快捷的就医体验。无论是尚不具备独立行为能力的孩子，还是缺乏必要知识和操作能力的老人，都可以在主账户的辅助下，完成诊疗全过程；"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:text="5、"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:text="电子处方：电子处方可以优化患者就诊流程、方便病人、提高服务水平及效率，使医院管理、决策实现科学化；"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:text="6、"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:text="智慧药房：网络医院通过智慧药房的系统，将患者的电子处方发送至康美药业，由康美药业完成药品的调配、中药煎煮与配送，把以前在医院繁杂的取药过程和回家后煎药的麻烦直接简化成“收快递”一样简便。"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="【温馨提示】"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/middle_font_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="top|left"
+                android:text="“康美医疗”为患者端。如果您是医生，请您下载“康美医生”进行体验。"
+                android:textColor="@color/third_text_color"
+                android:textSize="@dimen/middle_font_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="top|left"
+                android:text="如有任何疑问和建议，请联系我们"
+                android:textColor="@color/third_text_color"
+                android:textSize="@dimen/middle_font_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:autoLink="web"
+                android:text="官方网站：http://www.kmwlyy.com"
+                android:textColor="@color/third_text_color"
+                android:textSize="@dimen/middle_font_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="phone"
+                android:layout_gravity="top|left"
+                android:text="客服电话：4008886158-1"
+                android:textColor="@color/third_text_color"
+                android:textSize="@dimen/middle_font_size" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

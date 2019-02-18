@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_main_white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/iv_item_health_user_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/default_avatar_patient"
+            android:layout_marginRight="10dp"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:id="@+id/tv_item_health_injury_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/large_font_size"
+                    android:textColor="@color/color_main_string"
+                    android:layout_marginRight="20dp"
+                    android:text="就诊人：王宝强"/>
+                <TextView
+                    android:id="@+id/tv_item_health_injury_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/middle_font_size"
+                    android:textColor="@color/color_main_string"
+                    android:layout_marginRight="20dp"
+                    android:text="男"/>
+                <TextView
+                    android:id="@+id/tv_item_health_injury_age"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/middle_font_size"
+                    android:textColor="@color/color_main_string"
+                    android:text="40岁"/>
+                <TextView
+                    android:id="@+id/tv_item_health_injury_replay"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/replay"
+                    android:textColor="@color/color_main_yellow"
+                    android:textSize="@dimen/small_font_size"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_item_health_injury_question"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="我的情况是就爱劳动纠纷拉大家发两地分居大方的说法的发达速度发打发似的发送到发送到发达的"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="@dimen/middle_font_size"
+                android:textColor="@color/color_main_string"
+                />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/img_time"/>
+                <TextView
+                    android:id="@+id/tv_item_health_injury_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16:00"
+                    android:textColor="@color/color_hint_string"
+                    android:textSize="@dimen/small_font_size"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

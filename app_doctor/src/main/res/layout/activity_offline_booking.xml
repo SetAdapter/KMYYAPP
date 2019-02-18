@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/app_base_title"></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/rg_offline_week_day"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_main_white"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_offline_monday"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/radiobutton_selector_weekday"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/Monday"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                />
+
+            <RadioButton
+
+                android:background="@drawable/radiobutton_selector_weekday"
+                android:id="@+id/rb_offline_tuesday"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginBottom="3dp"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/Tuesday"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <RadioButton
+                android:background="@drawable/radiobutton_selector_weekday"
+                android:id="@+id/rb_offline_wednesday"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginBottom="3dp"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/Wednesday"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <RadioButton
+                android:id="@+id/rb_offline_thursday"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/radiobutton_selector_weekday"
+
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/Thursday"/>
+
+            <RadioButton
+                android:background="@drawable/radiobutton_selector_weekday"
+                android:id="@+id/rb_offline_friday"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginBottom="3dp"
+
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/Friday"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <RadioButton
+                android:background="@drawable/radiobutton_selector_weekday"
+                android:id="@+id/rb_offline_saturday"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginBottom="3dp"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/Saturday"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <RadioButton
+                android:background="@drawable/radiobutton_selector_weekday"
+                android:id="@+id/rb_offline_sunday"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginBottom="3dp"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/Sunday"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/ll_offline_cotent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/color_main_white"
+            android:gravity="center_vertical"
+            android:paddingBottom="80dp"
+            android:paddingTop="80dp">
+
+            <ListView
+                android:id="@+id/lv_offline_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

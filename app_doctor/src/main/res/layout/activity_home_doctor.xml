@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_main_white"
+   >
+
+    <include layout="@layout/app_base_title"/>
+
+    <!--head content-->
+    <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+        android:layout_marginTop="15px">
+
+   <!-- <ImageView
+        android:layout_margin="30dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/iv_head_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"/>-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/home_doctor"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/extra_extra_large_font_size"
+            android:textColor="#0accce"/>
+        <TextView
+            android:id="@+id/tv_head_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/home_doctor_desc"
+            android:textSize="@dimen/extra_large_font_size"
+            android:gravity="center_horizontal"
+            android:textColor="#0accce"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/img_jtys"
+            android:layout_gravity="center_horizontal"/>
+   </LinearLayout>
+    <!--service describe-->
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/service_introduce"
+            android:textSize="@dimen/middle_font_size"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:gravity="left"
+            android:layout_marginTop="15px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/service_introduce_one"
+            android:textSize="@dimen/small_font_size"
+            android:textColor="#666666"
+            android:lineSpacingExtra="3dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/service_introduce_two"
+            android:textSize="@dimen/small_font_size"
+            android:textColor="#666666"
+            android:lineSpacingExtra="3dp"/>
+        <!--bottom button-->
+        <Button
+            android:layout_marginTop="8dp"
+            android:id="@+id/btn_service_activation"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/start_service"
+            android:textSize="@dimen/large_font_size"
+            android:textColor="@color/white"
+            android:background="#0accce"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

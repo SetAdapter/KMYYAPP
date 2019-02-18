@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/app_base_title"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="48dip"
+                  android:background="@android:color/white"
+                  android:orientation="horizontal"
+                  android:padding="10dip">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="收货人："
+            android:textColor="@color/common_text2"
+            android:textSize="@dimen/big_font_size"/>
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/common_text2"
+            android:textSize="@dimen/big_font_size"/>
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/common_stroke"
+        android:visibility="visible"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="48dip"
+                  android:background="@android:color/white"
+                  android:orientation="horizontal"
+                  android:padding="10dip">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="联系电话："
+            android:textColor="@color/common_text2"
+            android:textSize="@dimen/big_font_size"/>
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/common_text2"
+            android:textSize="@dimen/big_font_size"/>
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/common_stroke"
+        android:visibility="visible"/>
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="48dip"
+                  android:background="@android:color/white"
+                  android:orientation="horizontal"
+                  android:padding="10dip">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="所在地区："
+            android:textColor="@color/common_text2"
+            android:textSize="@dimen/big_font_size"/>
+        <TextView
+            android:id="@+id/tv_area"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:drawableRight="@drawable/ic_arrow_right_nor"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/common_text2"
+            android:textSize="@dimen/big_font_size"/>
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/common_stroke"
+        android:visibility="visible"/>
+
+
+    <EditText
+        android:id="@+id/et_addr"
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:background="@android:color/white"
+        android:gravity="top"
+        android:hint="详细地址"
+        android:inputType="textMultiLine"
+        android:padding="10dip"
+        android:text=""
+        android:textColor="@color/common_text2"
+        android:textColorHint="@color/common_text4"
+        android:textSize="@dimen/big_font_size"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/common_stroke"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/layout_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:visibility="visible"
+        android:orientation="vertical">
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/common_stroke"
+            android:visibility="visible"/>
+        <CheckBox
+            android:id="@+id/cb_default"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:background="@android:color/white"
+            android:button="@null"
+            android:drawableRight="@drawable/bg_ios_check"
+            android:padding="10dip"
+            android:text="设为默认"
+            android:textColor="@color/common_text2"
+            android:textColorHint="@color/common_text4"
+            android:textSize="@dimen/big_font_size"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/common_stroke"
+            android:visibility="visible"/>
+    </LinearLayout>
+</LinearLayout>

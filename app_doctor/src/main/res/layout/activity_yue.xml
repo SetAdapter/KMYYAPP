@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title"/>
+    <LinearLayout
+        android:id="@+id/lay_setting"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_color_white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp" >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="@string/string_currenty_money"
+            android:textColor="@color/color_tag_string"
+            android:textSize="@dimen/middle_font_size" />
+
+        <TextView
+            android:id="@+id/tv_balanceTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:textColor="@color/app_color_red"
+            android:textSize="@dimen/middle_font_size"
+            android:singleLine="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="@string/string_enable_money"
+            android:textColor="@color/color_tag_string"
+            android:textSize="@dimen/middle_font_size" />
+
+        <TextView
+            android:id="@+id/tv_availableBalance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:textColor="@color/app_color_red"
+            android:textSize="@dimen/middle_font_size"
+            android:singleLine="true"
+            />
+
+    </LinearLayout>
+
+    <View style="@style/dividing_line" />
+
+    <LinearLayout
+        android:id="@+id/lay_money"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_color_white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_money" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="@string/string_money"
+            android:textColor="@color/color_tag_string"
+            android:textSize="@dimen/big_font_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@mipmap/icon_right" />
+    </LinearLayout>
+
+    <View style="@style/dividing_line" />
+
+    <LinearLayout
+        android:id="@+id/lay_bank_card"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_color_white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_bank_card" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="@string/string_my_card"
+            android:textColor="@color/color_tag_string"
+            android:textSize="@dimen/big_font_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@mipmap/icon_right" />
+    </LinearLayout>
+</LinearLayout>

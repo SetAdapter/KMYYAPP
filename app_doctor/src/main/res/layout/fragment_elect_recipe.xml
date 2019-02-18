@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_sign_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.winson.ui.widget.DrawableCenterRadioButton
+            android:id="@+id/rb_unsign_list"
+            style="@style/main_tab_list_sign"
+            android:checked="true"
+            android:drawableLeft="@drawable/radiobutton_selector_unsign"
+            android:drawablePadding="10dp"
+            android:text="@string/string_list_unsign"
+            android:textSize="@dimen/big_font_size"/>
+        <View style="@style/dividing_vertical_line"/>
+        <com.winson.ui.widget.DrawableCenterRadioButton
+            android:id="@+id/rb_sign_list"
+            style="@style/main_tab_list_sign"
+            android:drawableLeft="@drawable/radiobutton_selector_sign"
+            android:drawablePadding="10dp"
+            android:text="@string/string_list_sign"
+            android:textSize="@dimen/big_font_size"/>
+    </RadioGroup>
+
+    <View style="@style/dividing_line"/>
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.winson.ui.widget.listview.PageListView
+            android:id="@+id/lv_recipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/app_background"
+    android:id="@+id/main_view"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/app_base_title"/>
+
+    <LinearLayout
+        android:id="@+id/ll_start_day"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_rq"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="起始日期："
+            android:textSize="16sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/color_tag_string"
+            />
+
+        <TextView
+            android:id="@+id/tv_start_day"
+            android:layout_width="0dp"
+            android:gravity="center_vertical|left"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请选择"
+            android:textColorHint="@color/color_sub_string"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_next_week2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_start_time"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_rq"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:visibility="invisible"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="时       间："
+            android:textSize="16sp"
+            android:textColor="@color/color_tag_string"
+            />
+
+        <TextView
+            android:id="@+id/tv_start_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:hint="请选择"
+            android:textColorHint="@color/color_sub_string"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_next_week2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider"
+        />
+    <LinearLayout
+        android:id="@+id/ll_end_day"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_rq"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="结束日期："
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp"
+            android:textColor="@color/color_tag_string"
+            android:id="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/tv_end_day"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:hint="请选择"
+            android:textColorHint="@color/color_sub_string"
+            android:background="@null"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_next_week2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_end_time"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_rq"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:visibility="invisible"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="时       间："
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp"
+            android:textColor="@color/color_tag_string"
+            />
+
+        <TextView
+            android:id="@+id/tv_end_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:hint="请选择"
+            android:textColorHint="@color/color_sub_string"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_next_week2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:text="受影响排班"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:textColor="@color/color_tag_string"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/app_color_white"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_last_week"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:scaleType="center"
+                    android:src="@mipmap/icon_previous_week1"/>
+
+                <TextView
+                    android:id="@+id/tv_start_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/middle_font_size"
+                    android:textColor="@color/app_color_main"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/middle_font_size"
+                    android:text="@string/string_calendar_string"/>
+
+                <TextView
+                    android:id="@+id/tv_end_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/middle_font_size"
+                    android:textColor="@color/app_color_main"/>
+
+                <ImageView
+                    android:id="@+id/iv_next_week"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:scaleType="center"
+                    android:src="@mipmap/icon_next_week1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="5dp">
+                <com.winson.ui.widget.ResizeGridView
+                    android:id="@+id/grid_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="8">
+
+                </com.winson.ui.widget.ResizeGridView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

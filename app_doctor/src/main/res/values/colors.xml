@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_color_main">#0accce</color>
+    <color name="app_color_string">#f9a821</color>
+    <color name="listview_line">@color/app_color_string_4</color>
+    <color name="app_color_red">#ff0000</color>
+    <color name="app_color_black">#000000</color>
+    <color name="btn_green">#a0d468</color>
+    <color name="app_color_string_4">#e7e7e7</color>
+    <color name="app_color_string_5">#a6a6a6</color>
+
+    <color name="app_color_not_login">#e4e4e4</color>
+    <color name="transparent">#55ff</color>
+    <color name="app_background">#f0f0f0</color>
+
+
+    <color name="text_second">#888888</color>
+    <color name="text_bold">#000000</color>
+    <color name="test">#ff0000</color>
+
+    <color name="app_red">#ff7f66</color>
+
+    <color name="app_transparent">#00000000</color>
+
+
+</resources>

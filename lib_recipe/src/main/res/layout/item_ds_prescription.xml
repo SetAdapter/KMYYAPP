@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/color_sub_string"
+            android:textSize="@dimen/big_font_size"
+            android:text="@string/string_diagnosis_name"/>
+
+        <!--<EditText-->
+            <!--android:id="@+id/et_diag_detail"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="15dp"-->
+            <!--android:background="@drawable/et_shape"/>-->
+
+        <doctor.kmwlyy.com.recipe.View.ICDAutoCompleteTextView
+            android:id="@+id/et_diag_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/et_shape"
+            android:textColor="@color/color_main_string"
+            android:textSize="@dimen/big_font_size"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/color_sub_string"
+            android:textSize="@dimen/big_font_size"
+            android:text="@string/string_diagnosis_detail"/>
+
+        <EditText
+            android:id="@+id/et_diag_detail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/color_main_string"
+            android:gravity="top|left"
+            android:textSize="@dimen/big_font_size"
+            android:background="@drawable/et_shape"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:drawableLeft="@mipmap/icon_add"
+            android:textColor="@color/color_main_string"
+            android:textSize="@dimen/middle_font_size"
+            android:visibility="gone"
+            android:text="@string/string_add"/>
+        <doctor.kmwlyy.com.recipe.View.MyDeleteTextView
+            android:id="@+id/tv_delete"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:drawableLeft="@mipmap/icon_delete"
+            android:textColor="@color/color_main_string"
+            android:textSize="@dimen/middle_font_size"
+            android:text="@string/string_delete"/>
+    </LinearLayout>
+</LinearLayout>

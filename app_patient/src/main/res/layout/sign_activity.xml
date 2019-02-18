@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include layout="@layout/common_titlebar"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+        <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        <CheckBox
+                android:id="@+id/check_read"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="我已阅读，并同意以上协议"/>
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:onClick="onNext"
+                android:background="@drawable/common_button_selector"
+                android:textColor="@color/common_color_white"
+                android:layout_alignParentBottom="true"
+                android:text="下一步"
+                android:id="@+id/bt_sign"/>
+    </LinearLayout>
+    <!--<ScrollView-->
+    <!--android:id="@+id/scroll_sign"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1">-->
+
+    <!--<LinearLayout-->
+    <!--android:orientation="vertical"-->
+    <!--android:background="@color/color_main_bg"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/color_main_white"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="广州市番禺区家庭医生式服务协议"-->
+    <!--android:textSize="18sp"-->
+    <!--android:layout_marginTop="12dp"-->
+    <!--android:textColor="@color/common_text1"-->
+    <!--android:gravity="center"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="12dp"-->
+    <!--android:layout_marginLeft="12dp"-->
+    <!--android:layout_marginRight="12dp"-->
+    <!--android:gravity="left"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="@string/sign"-->
+    <!--android:textColor="@color/common_text1"-->
+    <!--android:textSize="14sp"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <!--</ScrollView>-->
+
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation">
+
+    <!--<string name="app_name">AgoraDemo</string>-->
+    <string name="app_conf">Agora会议室</string>
+
+    <string name="title_channel">房间%s</string>
+    <string name="action_settings">设置</string>
+
+    <string name="key_input">输入厂商Key</string>
+
+    <string name="room_input">输入房间号码</string>
+
+    <string name="video_enter">进入视频通话</string>
+
+    <string name="micro_enter">进入语音通话</string>
+
+    <string name="video_button">视频通话</string>
+
+    <string name="micro_button">语音通话</string>
+
+    <string name="key_required">Key不能为空</string>
+
+    <string name="room_required">房间号不能为空, 且需要是数字</string>
+
+    <string name="room_button_one">静音</string>
+
+    <string name="room_button_two">扬声器</string>
+
+    <string name="room_button_three">关闭摄像头</string>
+
+    <string name="room_button_four">切换摄像头</string>
+
+    <string name="room_prepare">房间等待好友加入</string>
+
+    <string name="network_error">网络无法连接，请检查网络</string>
+
+    <string name="error_101">无效的厂商Key</string>
+
+    <string name="error_confirm">确定</string>
+    <string name="error_cancel">取消</string>
+
+    <string name="login_agora">正在进入诊间...</string>
+    <string name="login_agora_error">患者不在诊间</string>
+    <string name="login_agora_failed">进入诊间失败</string>
+
+    <string name="doctor_finish">医生结束了问诊</string>
+    <string name="patient_finish">患者离开了诊间</string>
+    <string name="doctor_net_error">医生掉线，本次问诊结束</string>
+    <string name="patient_net_error">患者掉线，本次问诊结束</string>
+    <string name="doctor_cancel_calling">医生取消呼叫，请继续等待</string>
+
+    <string name="auth_failed">身份验证失败</string>
+
+    <string name="voice_request">语音咨询电话</string>
+    <string name="video_request">视频咨询电话</string>
+    <string name="refuse_called">对方拒绝接听</string>
+    <string name="leave_room">对方离开诊室</string>
+
+    <string name="enter_room_failed">进入诊室失败，请稍后再试</string>
+    <string name="update_room_failed">操作失败，请稍后再试</string>
+
+    <string name="voice_finish">结束语音</string>
+    <string name="make_recipe">开处方</string>
+    <string name="calling">通话中...</string>
+
+    <string name="waiting_count">前面还有 %s 位患者候诊中</string>
+
+    <string name="calling_patient">等待对方接听...</string>
+    <string name="calling_doctor">正在呼叫</string>
+
+    <string name="login_success">您已进入候诊室</string>
+    <string name="login_out">一会再来</string>
+
+    <string name="calling_finish_prompt">确定要退出通话？</string>
+
+    <string name="meeting">远程会诊</string>
+    <string name="meeting_doctor_error">暂时未能获取到会诊医生信息</string>
+
+    <string name="tool_muter">麦克风</string>
+    <string name="tool_camera_enabler">摄像头</string>
+    <string name="tool_speaker">扬声器</string>
+    <string name="tool_chat">收起</string>
+    <string name="tool_speed">网络</string>
+
+    <string name="hint">提示</string>
+</resources>

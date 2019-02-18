@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title"/>
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/app_color_white"
+        android:visibility="visible"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btn_chat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableBottom="@drawable/radio_group_selector"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/string_order_chat"
+            android:textColor="@drawable/radio_group_text_selector" />
+        <RadioButton
+            android:id="@+id/btn_voice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="@drawable/radio_group_selector"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/string_order_video"
+            android:textColor="@drawable/radio_group_text_selector" />
+        <RadioButton
+            android:id="@+id/btn_video"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="@drawable/radio_group_selector"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/string_order_family"
+            android:textColor="@drawable/radio_group_text_selector"
+            android:checked="false"/>
+    </RadioGroup>
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_listview_divider"/>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

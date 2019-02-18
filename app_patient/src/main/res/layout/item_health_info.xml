@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_health_info"
+    android:layout_height="100dp"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    >
+
+    <ImageView
+        android:id="@+id/iv_article"
+        android:layout_width="76dp"
+        android:layout_height="65dp"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:src="@drawable/default_img"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_article_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_article"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="0dp"
+        android:maxLines="2"
+        android:textColor="@color/primary_text_color"
+        android:textSize="@dimen/middle_font_size" />
+
+    <TextView
+        android:id="@+id/tv_article_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_article"
+        android:paddingLeft="0dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="#999999"
+        android:textSize="@dimen/mini_font_size" />
+
+    <TextView
+        android:id="@+id/tv_read_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text=""
+        android:textColor="#999999"
+        android:textSize="@dimen/mini_font_size" />
+
+</RelativeLayout>

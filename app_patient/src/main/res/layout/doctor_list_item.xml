@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        >
+
+
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="@dimen/avatar_size"
+                android:layout_height="@dimen/avatar_size"
+                android:layout_gravity="center"
+                android:background="@drawable/default_avatar" />
+
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/doctor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="@dimen/big_font_size"
+                    android:text="李天一"
+                    />
+
+                <TextView
+                    android:id="@+id/diagnose_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignBottom="@id/doctor_name"
+                    android:singleLine="true"
+                    android:textColor="@color/second_text_color"
+                    android:textSize="@dimen/small_font_size"
+                    android:drawableLeft="@drawable/diagnose_quantity"
+                    android:drawablePadding="3dp"
+                    android:text="444"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    />
+
+
+                <TextView
+                    android:id="@+id/doctor_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/doctor_name"
+                    android:layout_toLeftOf="@id/diagnose_quantity"
+                    android:layout_alignBottom="@id/doctor_name"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="true"
+                    android:textColor="@color/second_text_color"
+                    android:textSize="@dimen/small_font_size"
+                    android:text="主任医生"
+                    />
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:paddingRight="8dp"
+                >
+                <TextView
+                    android:id="@+id/hospital_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="200dp"
+                    android:singleLine="true"
+                    android:textColor="@color/second_text_color"
+                    android:textSize="@dimen/middle_font_size"
+                    android:text="北京大学深圳医院"
+                    />
+
+                <TextView
+                    android:id="@+id/department"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/hospital_name"
+                    android:minWidth="30dp"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:textColor="@color/second_text_color"
+                    android:textSize="@dimen/middle_font_size"
+                    android:text="眼科"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_specialty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:singleLine="true"
+                android:textColor="@color/third_text_color"
+                android:textSize="@dimen/small_font_size"
+                android:text="专治各种小孩子不听话，爱哭，爱闹症状。专治各种小孩子不听话，爱哭，爱闹症状。"
+                />
+
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_size"
+        android:layout_marginLeft="12.64dp"
+        android:background="@color/divider"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="12.64dp"
+        android:layout_marginRight="12.64dp"
+        android:paddingBottom="10dp"
+        >
+            <TextView
+                android:id="@+id/image"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="6dp"
+                android:drawableLeft="@drawable/image"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/enable_text"
+                android:textSize="@dimen/small_font_size"
+                android:text="未开通"
+                android:enabled="false"
+                />
+
+            <TextView
+                android:id="@+id/video"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:drawablePadding="6dp"
+                android:drawableLeft="@drawable/video"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/enable_text"
+                android:textSize="@dimen/small_font_size"
+                android:text="未开通"
+                android:enabled="false"
+                />
+
+            <TextView
+                android:id="@+id/im"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:drawablePadding="6dp"
+                android:drawableLeft="@drawable/im"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/enable_text"
+                android:textSize="@dimen/small_font_size"
+                android:text="未开通"
+                android:enabled="false"
+                />
+
+            <TextView
+                android:id="@+id/home_doctor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:drawablePadding="6dp"
+                android:drawableLeft="@drawable/home_doctor_c"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/enable_text"
+                android:textSize="@dimen/small_font_size"
+                android:text="未开通"
+                android:enabled="false"
+                />
+
+
+        </LinearLayout>
+
+
+</LinearLayout>

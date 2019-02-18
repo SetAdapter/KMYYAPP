@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+            android:id="@+id/layout_title"
+            layout="@layout/common_titlebar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="1.为签约家庭成员建立健康档案，并实施健康动态管理。\n2.为签约家庭提供合理腊食、控制体重、限盐、控烟、限酒、控制药物依赖等健康生活方式和可干预危险因素等健康教育。\n3.为签约家庭中65 岁以上老人每年体检一次，体检项目《包括: 血脂、血糖、血常规、尿常规、肝功能、肾功能。心电图)\n4.为高血压、糖尿病等慢性病和高危人群进行用药指导和随访服务。\n5 为育龄妇女提供优生优育、避孕节育、孕期保健指导和产后访视服务。\n6.为0-6岁儿童建立儿童保健手册和开展新生儿访视服务。\n7.每季度为签约家庭成员的健康状况进行电话或上门跟踪随访，实时制定健康生活指导方案\n8.按签约家庭需要，可提前预约就诊，建立转介、转诊绿色通道服务。\n9.为签约家庭定期指导整理家庭药箱。\n10.中医药健康服务指是"
+            android:textColor="@color/common_text1"
+            android:textSize="14sp"/>
+</LinearLayout>

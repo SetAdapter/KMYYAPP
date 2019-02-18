@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/edit_bg"
+              android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="上门基础服务"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/common_text1"
+            android:textSize="16sp"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="病情分析"
+                android:textColor="@color/common_text2"
+                android:textSize="16sp"/>
+
+        <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/common_text2"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="体格检查"
+                android:textColor="@color/common_text2"
+                android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+        <TextView
+                android:id="@+id/text_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="150元"
+                android:textColor="#ff0000"
+                android:textSize="12sp"/>
+
+        <TextView
+                android:id="@+id/text_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="1033人已购"
+                android:textColor="@color/common_text2"
+                android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+            android:id="@+id/image_pic"
+            android:layout_width="180dp"
+            android:layout_height="105dp"
+            android:src="@drawable/vcg"/>
+
+    <TextView
+            android:id="@+id/detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="详细信息"
+            android:textColor="@color/common_text2"
+            android:textSize="12sp"/>
+
+</LinearLayout>

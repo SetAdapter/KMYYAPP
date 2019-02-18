@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg">
+
+    <include layout="@layout/app_base_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="vertical"
+        android:background="@color/color_main_white">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/et_shape1"
+            android:gravity="center_vertical" >
+
+            <Button
+                android:id="@+id/btn_symptom"
+                android:padding="5dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@mipmap/icon_search" />
+
+            <EditText
+                android:id="@+id/et_symptom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/string_search_name"
+                android:singleLine="true"
+                android:textSize="@dimen/middle_font_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_listview_divider"/>
+
+    <TextView
+        android:id="@+id/tv_noResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:visibility="gone"
+        android:textSize="@dimen/small_font_size"
+        android:textColor="@color/third_text_color"
+        android:gravity="center"
+        android:text="没有找到相关患者，请换个关键词试试！"
+        />
+
+    <com.winson.ui.widget.listview.PageListView
+        android:id="@+id/lv_patients"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

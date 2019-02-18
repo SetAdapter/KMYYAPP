@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="doctor.kmwlyy.com.recipe">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".RecipeActivity" />
+        <activity android:name=".StoreRecipeActivity" />
+        <activity android:name=".BaseActivity" />
+        <activity android:name=".RecipeListActivity" />
+        <activity android:name=".RecipeDetailActivity" />
+        <activity android:name=".DrugListActivity" />
+        <activity android:name=".DrugListSelActivity"></activity>
+    </application>
+
+</manifest>

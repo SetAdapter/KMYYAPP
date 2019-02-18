@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:layout_marginTop="@dimen/list_padding"
+                android:background="@color/divider" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/app_padding"
+                android:paddingTop="@dimen/app_padding">
+
+                <FrameLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/doctor_avatar"
+                        android:layout_width="@dimen/avatar_size"
+                        android:layout_height="@dimen/avatar_size"
+                        android:layout_gravity="center"
+                        android:background="@drawable/default_avatar" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom|left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/doctor_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textColor="@color/primary_text_color"
+                            android:textSize="@dimen/big_font_size" />
+
+                        <TextView
+                            android:id="@+id/doctor_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/second_text_color"
+                            android:textSize="@dimen/middle_font_size" />
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        >
+                        <TextView
+                            android:id="@+id/hospital_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="130dp"
+                            android:textColor="@color/second_text_color"
+                            android:textSize="@dimen/small_font_size"
+                            />
+
+                        <TextView
+                            android:id="@+id/department"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/hospital_name"
+                            android:minWidth="40dp"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/second_text_color"
+                            android:textSize="@dimen/small_font_size"
+                            />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_diagnose_and_follow_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/second_text_color"
+                            android:textSize="@dimen/middle_font_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_follow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btn_unfollow"
+                        android:gravity="center"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="6dp"
+                        android:text="@string/already_follow"
+                        android:textColor="@color/unable"
+                        android:textSize="@dimen/middle_font_size" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="@string/be_good_at" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <com.winson.ui.widget.LineCheckTextView
+                    android:id="@+id/describtion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:maxLines="3"
+                    android:textColor="@color/color_tag_string" />
+
+                <TextView
+                    android:id="@+id/display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="50dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/unfold"
+                    android:textColor="@color/color_sub_string"
+                    android:textSize="@dimen/middle_font_size" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:background="@color/divider" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:layout_marginTop="@dimen/list_padding"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:id="@+id/ll_buy_image_word_consult"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_item_height"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/app_padding"
+                android:paddingRight="@dimen/app_padding">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_image_txt_consult" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/app_padding"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="@string/image_word_consult"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="@dimen/big_font_size" />
+
+                <TextView
+                    android:id="@+id/tv_image_txt_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/next_unselect" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:id="@+id/ll_video_consultation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_item_height"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/app_padding"
+                android:paddingRight="@dimen/app_padding">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_video_consult" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/app_padding"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="@string/video_consult"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="@dimen/big_font_size" />
+
+                <TextView
+                    android:id="@+id/tv_video_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/next_unselect" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:background="@color/divider" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_phonetic_consulting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_item_height"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/app_padding"
+                android:paddingRight="@dimen/app_padding">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_voice_consult" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/app_padding"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="@string/voice_consult"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="@dimen/big_font_size" />
+
+                <TextView
+                    android:id="@+id/tv_voice_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/next_unselect" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:id="@+id/ll_buy_home_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_item_height"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/app_padding"
+                android:paddingRight="@dimen/app_padding">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_doctor_consult" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/app_padding"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="@string/string_evaluate_record5"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="@dimen/big_font_size" />
+
+                <TextView
+                    android:id="@+id/tv_doctor_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/next_unselect" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:background="@color/divider" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:layout_marginTop="10dp"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:id="@+id/ll_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_evaluate"
+                    android:textColor="@color/color_tag_string" />
+
+                <TextView
+                    android:id="@+id/tv_evaluate_count"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/color_sub_string" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/next_unselect" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:background="@color/divider" />
+
+            <com.winson.ui.widget.MeasureListView
+                android:id="@+id/lv_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:background="@color/divider" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:layout_marginTop="10dp"
+                android:background="@color/divider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="@string/doctor_introduction" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/intro_describtions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/color_tag_string"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

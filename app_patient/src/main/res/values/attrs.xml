@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleEditText">
+        <attr name="title_text" format="reference|string" />
+        <attr name="content_hint" format="reference|string" />
+    </declare-styleable>
+
+    <declare-styleable name="TitleChose">
+        <attr name="title_title" format="reference|string" />
+        <attr name="hint_text" format="reference|string" />
+    </declare-styleable>
+
+    <declare-styleable name="FoldableTextView">
+        <!--展开收缩动画的持续时间-->
+        <attr name="animDuration" format="integer" />
+        <!--正文颜色-->
+        <attr name="textColor" format="color" />
+        <!--正文文字大小-->
+        <attr name="textSize" format="dimension" />
+        <!--展开状态文字颜色-->
+        <attr name="flagColor" format="dimension" />
+        <!--展开状态文字大小-->
+        <attr name="flagSize" format="dimension" />
+        <!--展开状态图片资源-->
+        <attr name="toggleSrcOpen" format="reference" />
+        <!--折叠状态图片资源-->
+        <attr name="toggleSrcClose" format="reference" />
+        <!--折叠时显示的最大行数-->
+        <attr name="minLines" format="integer" />
+        <!--折叠标示的显示位置，只有中和右两种选择-->
+        <attr name="flagGravity" format="enum">
+            <enum name="center" value="0" />
+            <enum name="end" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="LinearGradient">
+        <attr name="startColor" format="color" />
+        <attr name="endColor" format="color" />
+        <attr name="defaultColor" format="color" />
+        <attr name="checked" format="boolean" />
+        <attr name="synchronize" format="boolean" />
+        <attr name="childBackground" format="color" />
+        <attr name="radius1" format="integer" />
+        <attr name="strokeWidth1" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="HHEmptyView">
+        <attr name="hh_empty_warn_txt" format="string|reference"/>
+        <attr name="hh_empty_loading_txt" format="string|reference"/>
+        <attr name="hh_empty_button_txt" format="string|reference"/>
+        <attr name="hh_empty_icon" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="pickerview">
+        <attr name="pickerview_gravity">
+            <enum name="center" value="17"/>
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+        </attr>
+        <attr name="pickerview_textSize" format="dimension"/>
+        <attr name="pickerview_textColorOut" format="color"/>
+        <attr name="pickerview_textColorCenter" format="color"/>
+        <attr name="pickerview_dividerColor" format="color"/>
+        <attr name="pickerview_lineSpacingMultiplier" format="float"/>
+    </declare-styleable>
+</resources>

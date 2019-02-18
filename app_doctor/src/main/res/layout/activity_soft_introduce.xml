@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background"
+              android:orientation="vertical">
+
+    <include layout="@layout/app_base_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/app_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="“康美医生”是康美健康云旗下网络医院服务平台的医生端。医生可通过“康美医生”App便捷设置服务项目，轻松管理患者就诊信息，快速的为患者解决各种健康问题，同时开具带有签名的电子处方。"
+                android:textColor="@color/third_text_color"
+                android:textSize="@dimen/middle_font_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="【主要功能】"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/middle_font_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:text="1、"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:text="我的诊室：模拟线下就医场景，医生可以快速的为患者提供图文、语音、视频等咨询服务，并在咨询完成后开具带医生签名的电子处方；"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:text="2、"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:text="问题库：闲暇时，医生可以在问题库里领取到自己擅长领域的患者提问，并提供免费咨询服务；"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size"
+                    android:id="@+id/textView"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:text="3、"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:text="订单管理：医生可以在手机端查看患者的各种服务订单请求，并可以通过手机消息通知第一时间进行响应处理；"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:text="4、"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:text="患者管理：医生通过查看患者的基本信息、就诊记录、电子病历，从而可以为患者进行最精准的诊断和治疗；"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:text="5、"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:text="常用处方：轻松管理常用处方，以便在医生开处方时可以快速调出，从而节省看诊时间，大大的提高看诊效率；"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:text="6、"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:text="服务设置：便捷开关在线咨询、个人义诊、家庭医生、远程会诊等服务项目，以及设置相关项目的服务价格和排班。"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="【温馨提示】"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/middle_font_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="top|left"
+                android:text="“康美医生”为医生端。如果您是患者，请您下载“康美医疗”进行体验。"
+                android:textColor="@color/third_text_color"
+                android:textSize="@dimen/middle_font_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="top|left"
+                android:text="如有任何疑问和建议，请联系我们"
+                android:textColor="@color/third_text_color"
+                android:textSize="@dimen/middle_font_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:autoLink="web"
+                android:text="官方网站：http://www.kmwlyy.com"
+                android:textColor="@color/third_text_color"
+                android:textSize="@dimen/middle_font_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="phone"
+                android:layout_gravity="top|left"
+                android:text="客服电话：4008886158-1"
+                android:textColor="@color/third_text_color"
+                android:textSize="@dimen/middle_font_size" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

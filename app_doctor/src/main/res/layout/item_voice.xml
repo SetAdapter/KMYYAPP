@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@color/color_main_bg"
+android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@color/app_color_white">
+
+    <View style="@style/dividing_line" />
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/middle_font_size"
+            android:textColor="@color/color_sub_string"/>
+
+        <TextView android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/middle_font_size"
+            android:textColor="@color/color_sub_string"/>
+    </LinearLayout>
+
+    <View style="@style/dividing_line" />
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_patient_name"
+            android:textSize="@dimen/big_font_size"
+            android:textColor="@color/color_tag_string"/>
+
+        <TextView android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big_font_size"
+            android:textColor="@color/color_main_string"/>
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_appointment1"
+            android:textSize="@dimen/big_font_size"
+            android:textColor="@color/color_tag_string"/>
+
+        <TextView android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big_font_size"
+            android:textColor="@color/color_main_string"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_desc"
+            android:textSize="@dimen/big_font_size"
+            android:textColor="@color/color_tag_string"/>
+
+        <TextView android:id="@+id/tv_desc"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big_font_size"
+            android:textColor="@color/color_main_string"/>
+
+        <TextView
+            android:id="@+id/tv_fee"
+            android:layout_marginLeft="@dimen/dimens_10_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big_font_size"
+            android:text="¥200"
+            android:textColor="@color/app_yellow"/>
+    </LinearLayout>
+
+    <View style="@style/dividing_line" />
+</LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,574 @@
+<resources>
+    <string name="app_name">康美医生</string>
+
+    <!--主界面-->
+    <string name="string_exit">再次点击退出</string>
+    <string name="string_tab_clinic">首页</string>
+    <string name="string_tab_query">问题库</string>
+    <string name="string_tab_center">个人中心</string>
+    <string name="string_tab_room">诊室</string>
+    <string name="string_tab_message">消息</string>
+    <string name="string_tab_service">服务</string>
+    <string name="string_login_failed">登录失败</string>
+    <string name="string_total">全部</string>
+
+    <!--我的诊所fragment界面-->
+    <string name="string_set_online">在线咨询</string>
+    <string name="string_set_voice">语音咨询</string>
+    <string name="string_set_video">视频咨询</string>
+    <string name="string_set_doctor">家族医生</string>
+    <string name="string_set_free_query">个人义诊</string>
+    <string name="string_set_long">远程会诊</string>
+    <string name="string_set_vedio_voice">语音/视频咨询</string>
+    <string name="string_set_yizhen">义诊</string>
+    <string name="string_set_free">免费咨询</string>
+    <string name="string_order_chat">图文咨询</string>
+    <string name="string_order_video">语音视频</string>
+    <string name="string_order_family">家庭医生</string>
+
+    <string name="string_order">查看订单</string>
+    <string name="string_yizhen">设置义诊</string>
+    <string name="string_sign_recipe">待签处方</string>
+    <string name="string_diagnose">常用处方</string>
+    <string name="string_manage">我的患者</string>
+    <string name="string_patient_detail">患者详情</string>
+    <string name="string_service_setting">设置服务</string>
+    <string name="string_calendar">设置排班</string>
+    <string name="string_calendar1">我的排班</string>
+    <string name="string_calendar2">义诊排班</string>
+    <string name="string_my_calendar">我的排班表</string>
+    <string name="string_service_time">服务时间:</string>
+    <string name="string_query_time">就诊时间:</string>
+    <string name="string_last_time">剩余时间:</string>
+    <string name="string_available">已排班</string>
+    <string name="string_calendar_invaild">请先获取排班信息再保存！</string>
+    <string name="string_exist_cert_no">本地没有证书，请先下载证书！</string>
+    <string name="string_check_pdf">查看处方</string>
+    <string name="string_list_sign">已签</string>
+    <string name="string_list_unsign">待签</string>
+    <string name="string_medical_history1">病历</string>
+    <string name="string_cancel_recipe">撤回</string>
+    <string name="string_sign_recipe1">签名</string>
+    <string name="string_select_all">全选</string>
+
+    <string name="string_dialog_cert">本地没有医网签证书，是否前往证书管理?</string>
+    <string name="string_dialog_permission">缺少参数，暂时无法提交</string>
+
+    <string name="string_recipe_name">姓名</string>
+    <string name="string_recipe_sex">性别</string>
+    <string name="string_recipe_age">年龄</string>
+    <string name="string_recipe_time">开具时间</string>
+    <string name="string_recipe_tag">临床诊断</string>
+    <string name="string_sign">去签名</string>
+
+    <string name="string_delete_success">处方删除成功！</string>
+    <string name="string_delete_failed">处方删除失败，请稍后再试</string>
+    <string name="string_recipe_dialog">是否删除该处方?</string>
+
+    <string name="string_medical_record">就诊记录</string>
+    <string name="string_medical_history">电子病历</string>
+    <string name="string_idcard">身份证号：</string>
+    <string name="string_email">联系邮箱：</string>
+    <string name="string_address">联系地址：</string>
+    <string name="show_diagnose">查看处方</string>
+    <string name="medical_history2">既往病史</string>
+    <string name="nothing">无</string>
+    <string name="diagnosed">初步诊断</string>
+    <string name="prescribed">医嘱</string>
+    <string name="VV_detail">问诊会诊</string>
+    <string name="diagnose_expense">问诊费用</string>
+    <string name="demand">主诉</string>
+    <string name="medical_history">现病史</string>
+    <string name="appointment_time">预约时段</string>
+    <string name="inspection_doctor">看诊医生</string>
+    <string name="patient_age">年龄</string>
+    <string name="patient_sex">性别</string>
+    <string name="pay_user">就诊人</string>
+    <string name="voice_diagnose2">语音问诊</string>
+    <string name="video_diagnose2">视频问诊</string>
+
+    <!--个人中心fragment 界面-->
+    <string name="string_modify_pwd">修改密码</string>
+    <string name="string_modify_failed">密码修改失败</string>
+    <string name="string_modify_success">密码修改成功</string>
+    <string name="string_dialog">提示</string>
+    <string name="string_dialog_content">确认退出该账号?</string>
+    <string name="string_dialog_update">确认升级?</string>
+    <string name="string_exit_yes">确认</string>
+    <string name="string_exit_no">取消</string>
+    <string name="string_yue">账户余额</string>
+    <string name="string_account">账户管理</string>
+    <string name="person_info">个人资料</string>
+    <string name="string_my_info">我的资料</string>
+    <string name="string_setting">设置</string>
+    <string name="string_earn">收益</string>
+    <string name="string_query">问诊</string>
+    <string name="string_fans">粉丝</string>
+    <string name="string_myfans">我的粉丝</string>
+    <string name="string_my_evaluate">患者评价</string>
+    <string name="string_voice_detail">诊断详情</string>
+    <string name="string_evaluate">评价</string>
+    <string name="string_rules">诊所规则</string>
+    <string name="string_cert">证书管理</string>
+    <string name="string_drugstore">药店处方</string>
+    <string name="string_drugrecipe_detail">处方详情</string>
+    <string name="string_confirm_recipe">确认处方</string>
+    <string name="string_about_company">关于健康云</string>
+    <string name="string_logout">退出</string>
+    <string name="string_money">立即提现</string>
+    <string name="string_complete">完成</string>
+    <string name="string_my_card">我的银行卡</string>
+    <string name="string_currenty_money">当前余额：</string>
+    <string name="string_enable_money">可提现余额：</string>
+    <string name="string_unbind">解除绑定</string>
+    <string name="string_bind_card">绑定银行卡</string>
+    <string name="string_get_info">正在获取个人信息...</string>
+    <string name="string_get_data">正在数据...</string>
+    <string name="string_get_info_failed">获取个人信息失败,请重新登录</string>
+
+    <string name="string_tv_name">姓名：</string>
+    <string name="string_tv_hospital">所属医院：</string>
+    <string name="string_tv_dept">所在科室：</string>
+    <string name="string_tv_title">职称：</string>
+    <string name="string_tv_idcard">身份证号：</string>
+    <string name="string_tv_intro">个人简介：</string>
+
+    <string name="string_state_send">已提交</string>
+    <string name="string_state_undo">未处理</string>
+    <string name="string_state_save">已保存</string>
+    <string name="string_state_finish">已完成</string>
+    <string name="string_apply_time">申请时间：</string>
+    <string name="string_store">药店名称&#160;&#160;</string>
+    <string name="string_patient_name">就诊人&#160;&#160;</string>
+    <string name="string_patient_time">咨询时间&#160;&#160;</string>
+    <string name="string_patient_content">病情描述&#160;&#160;</string>
+    <string name="string_time">有效期&#160;&#160;</string>
+    <string name="string_amount">金额&#160;&#160;</string>
+    <string name="string_dealtime">处方时间&#160;&#160;</string>
+
+    <string name="string_doc_title1">住院医师</string>
+    <string name="string_doc_title2">主治医师</string>
+    <string name="string_doc_title3">副主任医师</string>
+    <string name="string_doc_title4">主任医师</string>
+
+
+    <!-- 设置相关界面 -->
+    <string name="push_notice">推送提醒</string>
+    <string name="grade_for">给我们评分吧</string>
+    <string name="about_us">关于我们</string>
+    <string name="suggest_feedback">意见反馈</string>
+    <string name="soft_introduce">软件介绍</string>
+    <string name="check_update">检查更新</string>
+    <string name="liscense_info">版权信息</string>
+    <string name="kangmei">康美健康云 版权所有</string>
+    <string name="kangmei_english">Copyright ©2015&#8211;2017 Kangmei Healthcloud.ALL Rights Reserverd.</string>
+    <string name="introduce">“康美医疗”为康美药业旗下打造的一款为用户提供专业在线健康医疗服务的平台。患者可通过在线问诊交流模式，精准的数据健康管理机制，专业轻松的就医体验，快速解决各种健康问题。
+【主要功能】
+1、在线问诊：用户通过购买图文/语音/视频咨询/家庭医生服务后，在相应的时间内，可直接和医生交流，问诊结束后，如医生开具处方，用户收到处方并确认付款后，处方药品会直接快递给用户，成功实现在线问诊。
+2、预约挂号：医院没有了号源怎么办？选择适合自己的医生，“挂号”功能一键搞定，无需排队。
+3、免费咨询：提交咨询内容和相关化验单以及患病部位照片，可得到医生的免费回复。
+4、今日义诊：用户选择适合自己的医生，提交义诊咨询内容和化验单以及患病部位照片。如医生回复咨询，可查看义诊咨询回复。
+【温馨提示】
+“康美医疗”App为用户版。如果您是医生，请在App Store搜索“康美医生”App下载体验。</string>
+    <string name="add_picture">添加图片</string>
+    <string name="feedback_prompt">*请填写您的反馈。（最少10个字）</string>
+    <string name="submit_wait">正在提交，请稍后...</string>
+    <string name="feedback_success">意见反馈提交成功。</string>
+    <string name="feedback_fail">意见反馈提交失败，请稍后再试。</string>
+
+
+    <!--服务设置界面-->
+    <string name="string_service_price">服务价格</string>
+    <string name="string_service_max">单日服务上限</string>
+    <string name="string_price_yuan">元</string>
+    <string name="string_price_person">人</string>
+    <string name="string_price_vedio">元/5分钟</string>
+    <string name="string_price_doctor">元/月</string>
+    <string name="string_back">返回</string>
+    <string name="string_save">保存</string>
+    <string name="string_missing_parm">价格内容不能为空！</string>
+    <string name="string_missing_parm1">单日服务人数不能为空！</string>
+    <string name="string_invaild">必须先打开图文、语音、视频咨询，才能开启家庭医生！</string>
+    <string name="string_invaild1">必须先打开图文，才能开启义诊！</string>
+    <string name="string_freecalendar">可排班</string>
+    <string name="string_freecalendar1">已排班</string>
+    <string name="string_freecalendar_remind">参数不全，请稍后再试</string>
+
+    <!--其它地方-->
+    <string name="string_relogin">登录超时，请重新登录</string>
+    <string name="string_wait">正在加载数据，请稍候</string>
+    <string name="string_wait_save">正在保存数据，请稍候</string>
+    <string name="string_save_success">设置成功</string>
+    <string name="string_save_failed">数据保存失败，请稍候重试</string>
+    <string name="string_apptoken">请求失败，请稍候重试</string>
+    <string name="get_identify_code_success">获取验证码成功</string>
+    <string name="get_identify_code_failed">获取验证码失败</string>
+    <string name="find_pwd_success">修改成功，请重新登录</string>
+    <string name="find_pwd_failed">找回密码失败，请稍后再试</string>
+
+    <string name="open_pdf">打开处方pdf</string>
+    <string name="download_pdf">下载处方pdf</string>
+    <string name="re_download">重新下载</string>
+    <string name="downloading">下载中...</string>
+    <string name="open_pdf_fail">打开处方pdf失败，请确保手机上已经安装pdf阅读工具。</string>
+    <string name="diagnose_detail">处方详情</string>
+    <string name="string_money_title">￥</string>
+    <string name="string_money_total">合计：</string>
+
+
+    <!--在线咨询fragment-->
+    <string name="string_online">图文咨询</string>
+    <string name="string_voice">语音咨询</string>
+    <string name="string_video">视频咨询</string>
+    <string name="string_video1">视频问诊</string>
+    <string name="string_video2">视话问诊</string>
+    <string name="string_elect_recipe">电子处方</string>
+    <string name="string_recipe_warning">请先选择处方！</string>
+    <string name="string_recipe_warning1">证书不存在！</string>
+    <string name="string_recipe_warning2">签章不存在！</string>
+    <string name="string_recipe_warning3">参数为空！</string>
+    <string name="string_recipe_warning4">程序运行缺少权限！</string>
+    <string name="string_recipe_warning6">批量签名数量错误--不能大于100条！</string>
+    <string name="string_recipe_cancel_success">撤回处方成功！</string>
+    <string name="string_call">呼叫</string>
+    <string name="string_patient">就诊人:</string>
+    <string name="string_gendar">性别:</string>
+    <string name="string_state">状态:</string>
+    <string name="string_appointment">预约时间:</string>
+    <string name="string_appointment1">预约时间&#160;&#160;</string>
+    <string name="string_desc">病情描述&#160;&#160;</string>
+    <string name="string_search_name">搜索患者名称</string>
+    <string name="string_wait_doctor">候诊中</string>
+    <string name="string_age">&#160;岁</string>
+    <string name="string_type_file">【文件】</string>
+    <string name="string_type_pic">【图片】</string>
+    <string name="string_type_voice">【语音】</string>
+    <string name="string_type_custom">【自定义消息】</string>
+
+    <!--银行卡页面-->
+    <string name="string_cancel">取消</string>
+    <string name="string_yes">确定</string>
+    <string name="string_bind_cancel">解绑</string>
+    <string name="string_bind_cancel_msg">确认解绑该银行卡</string>
+    <string name="string_bind_cancel_success">解绑成功</string>
+    <string name="string_bind_bind_success">绑定成功</string>
+    <string name="string_bank_msg1">请输入银行名称</string>
+    <string name="string_bank_msg2">请输入正确银行卡号</string>
+    <string name="string_bank_msg3">请输入开户行支行</string>
+    <string name="string_bank_msg4">请输入持卡人姓名</string>
+    <string name="string_bank1">中国工商银行</string>
+    <string name="string_bank2">中国建设银行</string>
+    <string name="string_bank3">中国银行</string>
+    <string name="string_bank4">中国农业银行</string>
+    <string name="string_bank5">中国人民银行</string>
+    <string name="string_bank6">交通银行</string>
+    <string name="string_bank7">招商银行</string>
+    <string name="string_bank8">中国邮政储蓄银行</string>
+    <string name="string_bank9">中信银行</string>
+    <string name="string_bank10">光大银行</string>
+    <string name="string_bank11">民生银行</string>
+    <string name="string_bank12">兴业银行</string>
+    <string name="string_bank13">华夏银行</string>
+    <string name="string_bank14">上海浦东发展银行</string>
+    <string name="string_bank15">深圳发展银行</string>
+    <string name="string_bank16">广东发展银行</string>
+    <string name="string_bank17">上海银行</string>
+    <string name="string_bank18">平安银行</string>
+    <string name="string_bank19">中国进出口银行</string>
+    <string name="string_bank20">北京银行</string>
+    <string name="string_bank21">南京银行</string>
+    <string name="string_bank22">宁波银行</string>
+    <string name="string_bank23">江苏银行</string>
+    <string name="string_bank24">浙商银行</string>
+    <string name="string_bank25">渤海银行</string>
+    <string name="string_bank26">恒丰银行</string>
+    <string name="string_bank27">昆仑银行</string>
+    <string name="string_bank28">大连银行</string>
+    <string name="string_bank29">包头银行</string>
+    <string name="string_choose_card">请选择银行卡</string>
+    <string name="string_bank_toast1">提现金额只精确到分，请重新输入</string>
+    <string name="string_bank_toast2">无效的提现金额，请重新输入</string>
+    <string name="string_bank_toast3">提现金额超出限制,请重设</string>
+    <string name="string_bank_toast4">无效的提现金额，请重新输入</string>
+    <string name="string_bank_info1">银行卡信息:&#160;&#160;&#160;&#160;</string>
+    <string name="string_bank_info2">提现金额：</string>
+    <string name="string_bank_info3">元</string>
+    <string name="string_bank_info4">到账时间:&#160;&#160;&#160;&#160;2个工作日内</string>
+    <string name="string_bank_feedback1">提现失败，请稍后再试</string>
+    <string name="string_bank_result">提现结果</string>
+    <string name="string_bank_sure">确认提现</string>
+    <string name="string_no_money">您没有可以提现的余额</string>
+    <string name="string_account_money">请输入提现金额</string>
+    <string name="string_next_step">下一步</string>
+    <string name="string_crash_success">提现成功</string>
+    <string name="string_crash_success_info">现金将会打入您所绑定的银行账户，请注意查收。</string>
+    <string name="string_bank_string">银行卡信息:请输入正确的卡号与相对应的持卡人姓名</string>
+    <string name="string_bank_name">银行名称&#160;</string>
+    <string name="string_bank_card_num">银行名卡号</string>
+    <string name="string_bank_card_num1">银行卡号：</string>
+    <string name="string_bank_add">开户行分支行</string>
+    <string name="string_bank_account_name">持卡人姓名&#160;</string>
+    <string name="string_bank_bind">绑定</string>
+    <string name="string_add_bankcard">新增银行卡</string>
+
+    <!--修改密码页面-->
+    <string name="string_pwd_msg1">原始密码不能为空</string>
+    <string name="string_pwd_msg2">新密码不能为空</string>
+    <string name="string_pwd_msg3">密码没有变化</string>
+    <string name="string_pwd_msg4">两次密码不一样</string>
+    <string name="string_pwd_msg5">密码长度必须在6-18位之间</string>
+
+    <string name="string_male">男</string>
+    <string name="string_female">女</string>
+    <string name="string_unknow">未知</string>
+    <string name="string_single_dog">未婚</string>
+    <string name="string_married">已婚</string>
+
+    <string name="string_order_type1">待支付</string>
+    <string name="string_order_type2">已支付</string>
+    <string name="string_order_type3">已完成</string>
+    <string name="string_order_type4">已取消</string>
+    <string name="string_order_type5">待收货</string>
+
+    <string name="string_consult_type1">图文咨询</string>
+    <string name="string_consult_type2">免费咨询</string>
+    <string name="string_consult_type3">义诊咨询</string>
+    <string name="string_consult_type4">会员套餐</string>
+    <string name="string_consult_type5">会员</string>
+    <string name="string_consult_type6">家庭医生</string>
+    <string name="string_consult_inquiryType">报告解读</string>
+
+    <string name="string_consult_state0">未回复</string>
+    <string name="string_consult_state1">已回复</string>
+    <string name="string_consult_state2">已完成</string>
+
+    <string name="string_family_type1">待支付</string>
+    <string name="string_family_type2">已支付</string>
+    <string name="string_family_type3">已过期</string>
+
+    <string name="string_voice_type1">未支付</string>
+    <string name="string_voice_type2">已支付</string>
+    <string name="string_voice_type3">已完成</string>
+
+    <string name="string_medical_record0">挂号</string>
+    <string name="string_medical_record1">图文咨询</string>
+    <string name="string_medical_record2">语音咨询</string>
+    <string name="string_medical_record3">视频咨询</string>
+    <string name="string_medical_record4">家庭医生</string>
+    <string name="string_medical_record5">远程会诊</string>
+
+    <string name="string_evaluate_record0">挂号</string>
+    <string name="string_evaluate_record1">图文咨询</string>
+    <string name="string_evaluate_record2">语音问诊</string>
+    <string name="string_evaluate_record3">视频问诊</string>
+    <string name="string_evaluate_record4">处方支付</string>
+    <string name="string_evaluate_record5">家庭医生</string>
+    <string name="string_evaluate_record6">会员套餐</string>
+
+    <string name="string_not_developed">功能未开放</string>
+
+    <!--修改密码界面-->
+    <string name="string_old_pwd">原密码</string>
+    <string name="string_new_pwd">新密码</string>
+    <string name="string_new_pwd1">新密码确认</string>
+    <string name="string_pwd_hint1">请输入原密码</string>
+    <string name="string_pwd_hint2">请输入新密码</string>
+    <string name="string_pwd_hint3">再次确认新密码</string>
+
+    <!--排班日历界面-->
+    <string name="string_calendar_string">&#160;&#160;&#160;至&#160;&#160;&#160;</string>
+
+    <string name="receive">领取</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="just_now">刚刚</string>
+    <string name="minute_ago">%1$s分钟前</string>
+    <string name="hour_ago">%1$s小时前</string>
+    <string name="day_ago">%1$s天前</string>
+    <string name="age_format">%1$s岁</string>
+    <string name="receive_question_notify">确认领取问题</string>
+    <string name="display">展开</string>
+    <string name="pack_up">收起</string>
+    <string name="accept_question_failed">领取问题失败</string>
+    <string name="on_accept_question">正在领取问题</string>
+
+    <!-- 实名认证 -->
+    <string name="real_name_authentication">实名认证</string>
+    <string name="reset">重新填写</string>
+    <string name="post_photo">上传图片中...</string>
+    <string name="post_photo_fail">上传失败</string>
+    <string name="plz_input_name">请输入姓名</string>
+    <string name="plz_input_hospital_name">请输入医院名称</string>
+    <string name="plz_input_department_name">请输入科室名称</string>
+    <string name="plz_input_title">请输入职称</string>
+    <string name="plz_input_id_number">请输入身份证号码</string>
+    <string name="plz_input_certificate_no">请输入执业资格证</string>
+    <string name="plz_input_specialty">请输入擅长</string>
+    <string name="plz_input_intro">请输入个人简介</string>
+    <string name="plz_input_post_id_url">请上传身份证照片</string>
+    <string name="plz_input_post_handle_id_url">请上传手持身份证照片</string>
+    <string name="plz_input_certificate_url">请上传执业资格证照片</string>
+    <string name="plz_input_correct_id_number">请输入正确的身份证号</string>
+    <string name="result_certification_fail">认证失败</string>
+    <string name="result_certification_fail_info">您的信息认证失败，可能是资料填写错误或是证件模糊以致无法认证通过！</string>
+    <string name="result_certification_in_review">正在审核中</string>
+    <string name="result_certification_in_review_info">您的信息已经提交成功，我们将尽快审核您的信息，请耐心等待... ...</string>
+    <string name="result_certification_wait_review">等待审核中</string>
+    <string name="plz_input_content">请输入内容</string>
+    <string name="specialty">擅长</string>
+    <string name="intro">个人简介</string>
+    <string name="input_done">完成</string>
+    <string name="input_save">提交</string>
+    <string name="doctor_name">姓名</string>
+    <string name="hospital_name">医院</string>
+    <string name="department_name">科室</string>
+    <string name="title_name">职称</string>
+    <string name="id_number">身份证号码</string>
+    <string name="certificate_no">执业资格证</string>
+    <string name="accessory_photo">附件照片</string>
+    <string name="demand_refer_to_example_photo">具体要求请参照示例照片</string>
+    <string name="plz_input_at_least_five_character">请输入至少5个字符</string>
+    <string name="plz_input_at_least_thirty_character">请输入至少30个字符</string>
+    <string name="plz_input_person_intro">请输入个人简介（300字以内）</string>
+    <string name="plz_input_specialty_hint">请输入擅长疾病（50字以内）</string>
+    <string name="id_number_photo_hint">身份证</string>
+    <string name="handle_id_number_photo_hint">手持身份证</string>
+    <string name="practising_certificate_photo_hint">执业资格证</string>
+    <string name="example_photo_title">示例照片</string>
+
+    <string name="illness_tracing"><![CDATA[<font color="#666666">病情描述</font>]]>&#160;&#160;%1$s</string>
+    <string name="get_pay_password_code">%s秒后重新获取</string>
+    <string name="get_code">正在获取验证码</string>
+    <string name="set_pay_password_info">正在设置交易密码</string>
+    <string name="withdraw_info">正在提现</string>
+    <!--家庭医生-->
+    <string name="home_doctor">家庭医生</string>
+    <string name="worktime_setting">设置工作时间</string>
+    <string name="free_ticket">提供线下看诊免费券</string>
+    <string name="address_setting">设置线下看诊地址</string>
+    <string name="video_phone_count">设置视话问诊次数</string>
+    <string name="auto_reply">设置自动回复语</string>
+    <string name="order_service">添加其他服务</string>
+    <string name="price_people">设置开通周期、价格及服务人数</string>
+    <string name="home_doctor_setting">家庭医生</string>
+    <string name="agree_protocol">本人同意并遵守</string>
+    <string name="home_doctor_protocol">《康美家庭医生服务协议》</string>
+    <string name="open_service">确认开通</string>
+    <string name="home_doctor_desc">给居民提供付费家庭医生服务</string>
+    <string name="service_introduce">服务介绍</string>
+    <string name="service_introduce_one">1.提供诊疗服务时，做到诊室内医生和就诊居民“一对一”交流。目的是为医生和就诊居民营造舒心的诊疗氛围，保护患者隐私。</string>
+    <string name="service_introduce_two">2.开展门诊接诊服务时，要根据就诊居民的实际情况，按照技术操作规范提供诊疗服务，并保证时间能与就诊居民进行充分交流。目的是保证诊疗质量，和谐医患关系。</string>
+    <string name="start_service">开通服务</string>
+    <string name="location_address">请输入交通地址</string>
+    <string name="traffic_address">交通地址</string>
+    <string name="input_address">请输入详细地址</string>
+    <string name="clinic_address">诊室地址</string>
+    <string name="offline_address">设置线下看诊地址</string>
+    <string name="save">保存</string>
+    <string name="three_months">三个月</string>
+    <string name="custom_price">自定义价格</string>
+    <string name="half_year">半年</string>
+    <string name="one_year">一年</string>
+    <string name="max_preson">服务人数上限</string>
+    <string name="upload_emr">正在上传病历，请稍等...</string>
+
+    <!-- 首页-->
+    <string name="my_schedule">我的日程</string>
+    <string name="patient_manage">患者管理</string>
+    <string name="today_notify">今日通知</string>
+    <string name="see_all">查看全部</string>
+    <string name="crycle_price_person_setting">设置周期、价格及人数</string>
+    <string name="select_home_doctor">用户选择我作为家庭医生时</string>
+    <string name="atuo_replay_setting">设置自动回复语</string>
+    <string name="add_service_desc">添加服务说明，为提供给居民增值服务</string>
+    <string name="three_moths_package">三个月服务包</string>
+    <string name="input_service_desc">请输入说明</string>
+    <string name="half_year_package">半年服务包</string>
+    <string name="one_year_package">一年服务包</string>
+    <string name="add_other_service">添加其他服务</string>
+    <string name="unsetting">未设置</string>
+    <string name="setted">已设置</string>
+
+    <string name="video_count">视频问诊次数</string>
+    <string name="ci">次</string>
+    <string name="video_count_setting">设置视频问诊次数</string>
+    <string name="health_inqury">健康咨询</string>
+    <string name="offline_booking">线下预约</string>
+    <string name="singed_people">签约居民</string>
+    <string name="injury_list">咨询列表</string>
+    <string name="replay">已回复</string>
+    <string name="string_my_message">我的消息</string>
+    <string name="service_record">服务记录</string>
+    <string name="followup_manage">随访管理</string>
+    <string name="home_management">家庭管理</string>
+    <string name="add_member">添加成员</string>
+    <string name="img_text_inqury">图文咨询</string>
+    <string name="video_inqury">视频咨询</string>
+    <string name="new_file">新建档案</string>
+    <string name="health_file">健康档案</string>
+    <string name="upload_file">上传档案</string>
+    <string name="commit">提交</string>
+    <string name="base_info">基本资料</string>
+    <string name="upload_info_file">上传档案</string>
+    <string name="add_medical_history">新增病历</string>
+    <string name="upload">提交</string>
+    <string name="divide_group">分组</string>
+    <string name="tv_group_name">名称：&#160;&#160;%1$s</string>
+    <string name="delete_patient_group">删除分组</string>
+    <string name="no_data">暂无数据</string>
+    <string name="delete_group_title">删除”%1$s“</string>
+    <string name="delete_group_msg">若删除”%1$s“，其所有数据也将被删除</string>
+    <string name="delete_group_fail">删除分组失败</string>
+    <string name="delete_group_success">删除分组成功</string>
+    <string name="add_member_fail">添加患者失败</string>
+    <string name="add_member_success">添加患者成功</string>
+    <string name="video_subscribe_format">&lt;font color="#ff7f66"&gt; %1$s人&lt;/font&gt;预约视话问诊</string>
+    <string name="im_subscribe_format">&lt;font color="#ff7f66"&gt; %1$s条&lt;/font&gt;未回复咨询</string>
+    <string name="look_any_time">随时查看</string>
+    <string name="exchange_illness">并沟通病情</string>
+    <string name="add_patient_group">新建分组</string>
+    <string name="please_input_patient_group_name">请输入新分组名称</string>
+    <string name="search_patient_notify">搜索患者姓名</string>
+    <string name="string_query_time_format">就诊时间：&#160;&#160;%1$s-%2$s</string>
+
+    <string name="Monday">星期一</string>
+    <string name="Tuesday">星期二</string>
+    <string name="Wednesday">星期三</string>
+    <string name="Thursday">星期四</string>
+    <string name="Friday">星期五</string>
+    <string name="Saturday">星期六</string>
+    <string name="Sunday">星期日</string>
+
+
+    <string name="insert_member_group_fail">新建分组失败</string>
+    <string name="insert_member_group_success">新建分组成功</string>
+    <string name="no_visit">未就诊</string>
+    <string name="other">其它</string>
+    <string name="wait_visit">候诊中</string>
+    <string name="on_visit">就诊中</string>
+    <string name="visited">已就诊</string>
+    <string name="on_call">呼叫中</string>
+    <string name="no_leave">离开中</string>
+    <string name="repeat_visit">重新候诊</string>
+    <string name="break_connect">断开连接</string>
+    <string name="delete_patient_success">移除患者成功</string>
+    <string name="delete_patient_fail">移除患者失败</string>
+    <string name="string_all">全部</string>
+    <string name="search_patient_no_data">暂未搜索到患者信息</string>
+    <string name="string_diagnose2">诊断</string>
+    <string name="look_illness_state">查看病情</string>
+    <string name="string_age_format">%1$s岁</string>
+    <string name="string_no_patient_data">暂无患者记录</string>
+
+    <string name="previous_week">上周</string>
+    <string name="current_week">本周</string>
+    <string name="next_week">下周</string>
+    <string name="string_sound">【声音】</string>
+    <string name="string_face">【表情】</string>
+    <string name="string_file">【文件】</string>
+    <string name="string_image">【图片】</string>
+    <string name="emtpy_order">暂无购买订单</string>
+    <string name="string_empty_search_result">未搜索到任何相关记录，请重新输入</string>
+
+
+</resources>

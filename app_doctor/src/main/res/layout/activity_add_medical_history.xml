@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background"
+              android:orientation="vertical"
+    >
+
+    <include layout="@layout/app_base_title"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_main_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="病历名称"
+                android:textColor="@color/second_text_color"
+                android:textSize="@dimen/middle_font_size"/>
+
+            <EditText
+                android:id="@+id/et_medical_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/app_padding"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right|center"
+                android:hint="请输入病历名称"
+                android:singleLine="true"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/middle_font_size"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/next_unselect"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_size"
+            android:background="@color/divider"/>
+
+        <!--选择日期-->
+        <LinearLayout
+            android:id="@+id/ll_check_day"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="检查日期"
+                android:textColor="@color/second_text_color"
+                android:textSize="@dimen/middle_font_size"/>
+
+            <TextView
+                android:id="@+id/tv_check_day"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/app_padding"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right|center"
+                android:hint="请选择"
+                android:singleLine="true"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/middle_font_size"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/next_unselect"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_size"
+            android:background="@color/divider"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_size"
+        android:layout_marginTop="10dp"
+        android:background="@color/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_shape"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp">
+
+
+        <EditText
+            android:id="@+id/et_medical_remark"
+            style="@style/edit_setting"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:gravity="top"
+            android:hint="@string/input_service_desc"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:minLines="2"
+            android:textColor="#333333"
+            android:textColorHint="#b3b3b3"
+            android:textCursorDrawable="@null"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_size"
+        android:background="@color/divider"/>
+
+    <!--选择图片-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_main_white"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text="病历图片"
+                android:textColor="@color/color_tag_string"
+                android:textSize="@dimen/middle_font_size"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:singleLine="false"
+                android:text="*最多不超过9张，含9张"
+                android:textColor="@color/color_button_orange"
+                android:textSize="@dimen/middle_font_size"/>
+
+        </LinearLayout>
+
+        <com.winson.ui.widget.InsideGridView
+            android:id="@+id/grid_upload_pictures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:horizontalSpacing="5dp"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

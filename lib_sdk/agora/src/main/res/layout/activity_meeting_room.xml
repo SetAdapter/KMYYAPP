@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  >
+    <!--title-->
+    <include android:id="@+id/topBar" layout="@layout/app_base_title" />
+
+
+
+    <!--聊天-->
+    <Button
+      android:id="@+id/btn_chat"
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      android:layout_alignParentBottom="true"
+      android:background="@drawable/go_video_button_background"
+      android:text="打开聊天窗口"
+      android:textColor="@android:color/white"
+      android:textSize="16sp"
+      />
+
+    <!--本地通话 和 远程通话用户头像列表-->
+
+    <FrameLayout
+      android:id="@+id/root"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@id/btn_chat"
+      android:layout_below="@id/topBar"
+      >
+
+        <TextView
+          android:id="@+id/tv_big"
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          android:visibility="gone"
+          />
+
+        <!--大图-->
+        <RelativeLayout
+          android:id="@+id/rl_big_view"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:visibility="visible"
+          />
+
+
+        <!-- 小图 -->
+        <HorizontalScrollView
+          android:id="@+id/scroll_small_view"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:scrollbars="none"
+          android:visibility="visible"
+          >
+
+            <LinearLayout
+              android:id="@+id/ll_scroll"
+              android:layout_width="match_parent"
+              android:layout_height="120dp"
+              android:orientation="horizontal"
+              android:padding="10dp"
+              >
+
+                <RelativeLayout
+                  android:id="@+id/rl_small0"
+                  android:layout_width="80dp"
+                  android:layout_height="100dp"
+                  android:background="@drawable/bg_white_frame"
+                  android:visibility="visible"
+                  >
+
+                    <TextView
+                      android:id="@+id/tv_small0"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="医生名"
+                      android:layout_centerHorizontal="true"
+                      android:layout_alignParentBottom="true"
+                      android:textColor="@color/white"
+                      />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                  android:id="@+id/rl_small1"
+                  android:layout_width="80dp"
+                  android:layout_height="100dp"
+                  android:layout_marginLeft="10dp"
+                  android:background="@drawable/bg_white_frame"
+                  android:visibility="gone"
+                  >
+                    <TextView
+                      android:id="@+id/tv_small1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="医生名"
+                      android:layout_centerHorizontal="true"
+                      android:layout_alignParentBottom="true"
+                      android:textColor="@color/white"
+                      />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                  android:id="@+id/rl_small2"
+                  android:layout_width="80dp"
+                  android:layout_height="100dp"
+                  android:background="@drawable/bg_white_frame"
+                  android:layout_marginLeft="10dp"
+                  android:visibility="gone"
+                  >
+                    <TextView
+                      android:id="@+id/tv_small2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="医生名"
+                      android:layout_centerHorizontal="true"
+                      android:layout_alignParentBottom="true"
+                      android:textColor="@color/white"
+                      />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                  android:id="@+id/rl_small3"
+                  android:layout_width="80dp"
+                  android:layout_height="100dp"
+                  android:background="@drawable/bg_white_frame"
+                  android:layout_marginLeft="10dp"
+                  android:visibility="gone"
+                  >
+                    <TextView
+                      android:id="@+id/tv_small3"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="医生名"
+                      android:layout_centerHorizontal="true"
+                      android:layout_alignParentBottom="true"
+                      android:textColor="@color/white"
+                      />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                  android:id="@+id/rl_small4"
+                  android:layout_width="80dp"
+                  android:layout_height="100dp"
+                  android:background="@drawable/bg_white_frame"
+                  android:layout_marginLeft="10dp"
+                  android:visibility="gone"
+                  >
+                    <TextView
+                      android:id="@+id/tv_small4"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="医生名"
+                      android:layout_centerHorizontal="true"
+                      android:layout_alignParentBottom="true"
+                      android:textColor="@color/white"
+                      />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                  android:id="@+id/rl_small5"
+                  android:layout_width="80dp"
+                  android:layout_height="100dp"
+                  android:background="@drawable/bg_white_frame"
+                  android:layout_marginLeft="10dp"
+                  android:visibility="gone"
+                  >
+                    <TextView
+                      android:id="@+id/tv_small5"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="医生名"
+                      android:layout_centerHorizontal="true"
+                      android:layout_alignParentBottom="true"
+                      android:textColor="@color/white"
+                      />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+    </FrameLayout>
+
+</RelativeLayout>

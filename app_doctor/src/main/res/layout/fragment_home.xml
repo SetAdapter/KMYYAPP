@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sv_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background"
+        android:orientation="vertical">
+
+        <com.winson.ui.widget.RateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/app_background"
+            app:rate_layout="0.4533"
+            app:rate_oritation="horization">
+
+            <com.winson.ui.widget.CircleViewPager
+                android:id="@+id/banner_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.winson.ui.widget.PagerIndicator
+                android:id="@+id/banner_indicator"
+                android:layout_width="100dp"
+                android:layout_height="8dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="10dp" />
+
+        </com.winson.ui.widget.RateLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_size"
+            android:background="@color/divider" />
+
+        <com.winson.ui.widget.RateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:rate_layout="0.42533"
+            android:background="@color/white"
+            app:rate_oritation="horization">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/my_schedule"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@mipmap/icon_wdrz" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.4dp"
+                        android:text="@string/my_schedule"
+                        android:textColor="@color/color_main_string"
+                        android:textSize="15.36sp" />
+
+                    <TextView
+                        android:id="@+id/video_subscribe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9.52dp"
+                        android:textColor="@color/text_second"
+                        android:textSize="12.48sp" />
+
+                    <TextView
+                        android:id="@+id/im_subscribe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4.76dp"
+                        android:textColor="@color/text_second"
+                        android:textSize="12.48sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/divide_size"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:id="@+id/my_patient_manage"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@mipmap/icon_hzgl" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.4dp"
+                        android:text="@string/patient_manage"
+                        android:textColor="@color/color_main_string"
+                        android:textSize="15.36sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9.52dp"
+                        android:text="@string/look_any_time"
+                        android:textColor="@color/text_second"
+                        android:textSize="12.48sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4.76dp"
+                        android:text="@string/exchange_illness"
+                        android:textColor="@color/text_second"
+                        android:textSize="12.48sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.winson.ui.widget.RateLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_size"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="14.4dp"
+                android:paddingTop="23dp"
+                android:text="@string/today_notify"
+                android:textColor="@color/text_bold"
+                android:textSize="14.4sp" />
+
+            <TextView
+                android:id="@+id/tv_message_all"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingBottom="14.4dp"
+                android:paddingRight="10dp"
+                android:paddingTop="23dp"
+                android:text="@string/see_all"
+                android:textColor="@color/text_second"
+                android:textSize="13.44sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_size"
+            android:background="@color/divider" />
+
+        <fragment android:name="com.kmwlyy.doctor.Fragment.MessageFragment"
+            android:id="@+id/msgs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</ScrollView>
+

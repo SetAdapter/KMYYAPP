@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_titlebar"/>
+
+    <ScrollView
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/list_padding"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:id="@+id/select_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card_bg"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="购买人："
+                        android:textSize="@dimen/middle_font_size"/>
+
+                <TextView
+                        android:id="@+id/user_member_info"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/list_padding"
+                        android:gravity="right"
+                        android:text="小华"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="@dimen/middle_font_size"/>
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/next_unselect"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    >
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        >
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="服务项："
+                            android:layout_marginLeft="15dp"
+                            android:textSize="@dimen/middle_font_size"
+                            />
+
+                    <TextView
+                            android:id="@+id/tv_ServiceItemName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="常规体检服务包"
+                            android:layout_alignParentRight="true"
+                            android:textSize="@dimen/middle_font_size"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/grey_adbec0"
+                            />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        >
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="服务总额："
+                            android:layout_marginLeft="15dp"
+                            android:textSize="@dimen/middle_font_size"
+                            />
+
+                    <TextView
+                            android:id="@+id/tv_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:textSize="@dimen/middle_font_size"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/grey_adbec0"
+                            />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        >
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="服务医生："
+                            android:layout_marginLeft="15dp"
+                            android:textSize="@dimen/middle_font_size"
+                            />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="家庭医生"
+                            android:layout_alignParentRight="true"
+                            android:textSize="@dimen/middle_font_size"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/grey_adbec0"
+                            />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="@color/white"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:gravity="center_vertical">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:text="购买人："-->
+            <!--android:textSize="@dimen/middle_font_size" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:padding="@dimen/list_padding"-->
+            <!--android:text="暂无优惠券"-->
+            <!--android:gravity="right"-->
+            <!--android:textColor="@color/btn_red_hover"-->
+            <!--android:textSize="@dimen/middle_font_size" />-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/next_unselect" />-->
+
+            <!--</LinearLayout>-->
+
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+
+            <Button
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/common_button_selector"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textColor="@color/common_color_white"
+                    android:textSize="18dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

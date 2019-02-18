@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tag_view"
+    android:id="@+id/tag_btn"
+    android:minHeight="30dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:minWidth="35dp"
+    android:gravity="center"
+    android:text="tag"
+    android:textSize="@dimen/middle_font_size"
+    android:textColor="@color/color_tag_string">
+</Button>

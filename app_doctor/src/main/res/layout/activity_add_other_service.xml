@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title" />
+    <!--自定义价格-->
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/add_service_desc"
+        android:textColor="@color/app_color_string"
+        android:textSize="@dimen/large_font_size" />
+    <ListView
+        android:id="@+id/lv_remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+   <!--&lt;!&ndash;三个月服务包&ndash;&gt;
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/three_moths_package"
+            android:textColor="#666666"
+            android:textSize="@dimen/large_font_size" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_size"
+            android:background="@color/divider" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_shape"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp">
+
+
+            <EditText
+                android:id="@+id/et_three_months_package"
+                style="@style/edit_setting"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:inputType="textMultiLine"
+                android:minLines="2"
+                android:maxLines="10"
+                android:textColor="#333333"
+                android:hint="@string/input_service_desc"
+                android:textColorHint="#b3b3b3"
+                android:textCursorDrawable="@null"
+                android:gravity="top"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_size"
+            android:background="@color/divider" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/half_year_package"
+            android:textColor="#666666"
+            android:textSize="@dimen/large_font_size" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_size"
+            android:background="@color/divider" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_shape"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp">
+
+
+            <EditText
+                android:id="@+id/et_half_year_package"
+                style="@style/edit_setting"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:inputType="textMultiLine"
+                android:minLines="2"
+                android:maxLines="10"
+                android:textColor="#333333"
+                android:hint="@string/input_service_desc"
+                android:textColorHint="#b3b3b3"
+                android:textCursorDrawable="@null"
+                android:gravity="top"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_size"
+            android:background="@color/divider" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/one_year_package"
+            android:textColor="#666666"
+            android:textSize="@dimen/large_font_size" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_size"
+            android:background="@color/divider" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_shape"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp">
+
+
+            <EditText
+                android:id="@+id/et_one_year_package"
+                style="@style/edit_setting"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:inputType="textMultiLine"
+                android:minLines="2"
+                android:maxLines="10"
+                android:textColor="#333333"
+                android:hint="@string/input_service_desc"
+                android:textColorHint="#b3b3b3"
+                android:textCursorDrawable="@null"
+                android:gravity="top"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_size"
+            android:background="@color/divider" />-->
+
+
+    <!--</LinearLayout>-->
+</LinearLayout>

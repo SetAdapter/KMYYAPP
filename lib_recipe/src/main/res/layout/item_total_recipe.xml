@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/color_main_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="@color/app_color_white">
+
+        <View style="@style/dividing_line"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="@dimen/middle_font_size"
+            android:textColor="@color/color_tag_string"
+            android:text="【中药处方】12345667"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="10dp"
+            android:textSize="@dimen/middle_font_size"
+            android:textColor="@color/color_tag_string"
+            android:text="慢性感冒" />
+
+        <View style="@style/dividing_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="10dp"
+                android:textSize="@dimen/small_font_size"
+                android:textColor="@color/color_sub_string"
+                android:visibility="invisible"
+                android:text="更新时间：2016-11-08" />
+
+            <Button
+                android:id="@+id/btn_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/small_font_size"
+                android:textColor="@color/color_tag_string"
+                android:drawableLeft="@mipmap/icon_editrl"
+                android:drawablePadding="-35dp"
+                android:gravity="center"
+                android:background="@null"
+                android:text="编辑" />
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/small_font_size"
+                android:textColor="@color/color_tag_string"
+                android:drawableLeft="@mipmap/icon_delrl"
+                android:drawablePadding="-35dp"
+                android:gravity="center"
+                android:background="@null"
+                android:text="删除" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/dividing_line"/>
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background"
+              android:orientation="vertical">
+
+    <include layout="@layout/app_base_title"/>
+    <!--自定义价格-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/custom_price"
+            android:textColor="#666666"
+            android:textSize="@dimen/large_font_size"/>
+        <!--三个月-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_size"
+            android:background="@color/divider"/>
+
+        <ListView
+            android:id="@+id/lv_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </LinearLayout>
+    <!--服务人数上限-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/max_preson"
+                android:textColor="#666666"
+                android:textSize="@dimen/large_font_size"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:background="@color/divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_shape"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/color_main_white">
+
+                    <Button
+                        android:id="@+id/btn_minus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@color/color_main_white"
+                        android:text="-"
+                        android:textColor="@drawable/btn_color_selector"
+                        android:textSize="@dimen/extra_extra_large_font_size"
+                        />
+
+                </RelativeLayout>
+
+
+                <EditText
+                    android:id="@+id/et_person_max"
+                    style="@style/edit_setting"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:paddingBottom="5dp"
+                    android:textColor="#ff7f66"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/color_main_white">
+
+                    <Button
+                        android:id="@+id/btn_plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@color/color_main_white"
+                        android:text="+"
+                        android:textColor="@drawable/btn_color_selector"
+                        android:textSize="@dimen/extra_extra_large_font_size"
+
+                        />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:background="@color/divider"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

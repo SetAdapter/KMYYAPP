@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/empty_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_background">
+
+            <TextView
+                android:id="@+id/add_patient_group"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/app_btn_normal"
+                android:gravity="center"
+                android:text="@string/add_patient_group"
+                android:textColor="@color/white"
+                android:textSize="@dimen/middle_font_size" />
+
+        </FrameLayout>
+
+        <com.winson.ui.widget.listview.PageListView
+            android:id="@+id/group_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

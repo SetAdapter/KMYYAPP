@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:layout_marginTop="@dimen/list_padding"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+
+                <!--MemberName	string-->
+                <!--姓名-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/list_item_height"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/member_name"
+                        android:textColor="@color/second_text_color"
+                        android:textSize="@dimen/middle_font_size" />
+
+                    <EditText
+                        android:id="@+id/member_name"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/app_padding"
+                        android:background="@null"
+                        android:hint="请输入姓名"
+                        android:gravity="right|center"
+                        android:singleLine="true"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="@dimen/middle_font_size" />
+
+                    <ImageView
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/next_unselect" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divide_size"
+                    android:background="@color/divider" />
+
+                <!--IDNumber	string-->
+                <!--证件号码-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/list_item_height"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="身份证"
+                        android:textColor="@color/second_text_color"
+                        android:textSize="@dimen/middle_font_size" />
+
+                    <EditText
+                        android:id="@+id/member_idnumber"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/app_padding"
+                        android:background="@null"
+                        android:maxLength="18"
+                        android:hint="请输入身份证号"
+                        android:gravity="right|center"
+                        android:singleLine="true"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="@dimen/middle_font_size" />
+
+                    <ImageView
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/next_unselect" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divide_size"
+                        android:background="@color/divider" />
+
+                    <!--Gender	string-->
+                    <!--性别（0-男、1-女、2-未知）-->
+                    <LinearLayout
+                        android:id="@+id/ll_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/list_item_height"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/member_gender"
+                            android:textColor="@color/second_text_color"
+                            android:textSize="@dimen/middle_font_size" />
+
+                        <TextView
+                            android:id="@+id/member_gender"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/app_padding"
+                            android:hint="请选择"
+                            android:gravity="right|center"
+                            android:background="@null"
+                            android:singleLine="true"
+                            android:textColor="@color/primary_text_color"
+                            android:textSize="@dimen/middle_font_size" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/next_unselect" />
+
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divide_size"
+                        android:background="@color/divider" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_date_of_birth"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/list_item_height"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="出生年月"
+                            android:textColor="@color/second_text_color"
+                            android:textSize="@dimen/middle_font_size" />
+
+                        <TextView
+                            android:id="@+id/member_birth"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/app_padding"
+                            android:background="@null"
+                            android:hint="请选择"
+                            android:gravity="right|center"
+                            android:singleLine="true"
+                            android:textColor="@color/primary_text_color"
+                            android:textSize="@dimen/middle_font_size" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/next_unselect" />
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divide_size"
+                        android:background="@color/divider" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@color/app_background"
+                         />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divide_size"
+                        android:background="@color/divider" />
+
+                    <!--Relation	string-->
+                    <!--成员关系 （0-自己、1-配偶、2-父亲、3-母亲、4-儿子、5女儿、6-其他）-->
+                    <LinearLayout
+                        android:id="@+id/ll_relation"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/list_item_height"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="与本人关系"
+                            android:textColor="@color/second_text_color"
+                            android:textSize="@dimen/middle_font_size" />
+
+                        <TextView
+                            android:id="@+id/member_relation"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/app_padding"
+                            android:background="@null"
+                            android:hint="请选择"
+                            android:gravity="right|center"
+                            android:singleLine="true"
+                            android:textColor="@color/primary_text_color"
+                            android:textSize="@dimen/middle_font_size" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/next_unselect" />
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divide_size"
+                        android:background="@color/divider" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@color/app_background"
+                         />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divide_size"
+                        android:background="@color/divider" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/list_item_height"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="手机号码"
+                            android:textColor="@color/second_text_color"
+                            android:textSize="@dimen/middle_font_size" />
+
+                        <EditText
+                            android:id="@+id/member_mobile"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/app_padding"
+                            android:background="@null"
+                            android:hint="请输入手机号码"
+                            android:gravity="right|center"
+                            android:singleLine="true"
+                            android:inputType="number"
+                            android:textColor="@color/primary_text_color"
+                            android:textSize="@dimen/middle_font_size" />
+
+                        <ImageView
+                            android:visibility="invisible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/next_unselect" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divide_size"
+                        android:background="@color/divider" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/list_item_height"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="联系邮箱"
+                            android:textColor="@color/second_text_color"
+                            android:textSize="@dimen/middle_font_size" />
+
+                        <EditText
+                            android:id="@+id/member_email"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/app_padding"
+                            android:background="@null"
+                            android:hint="请输入联系邮箱"
+                            android:gravity="right|center"
+                            android:singleLine="true"
+                            android:textColor="@color/primary_text_color"
+                            android:textSize="@dimen/middle_font_size" />
+
+                        <ImageView
+                            android:visibility="invisible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/next_unselect" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divide_size"
+                        android:background="@color/divider" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/list_item_height"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="gone"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="所在区域"
+                            android:textColor="@color/second_text_color"
+                            android:textSize="@dimen/middle_font_size" />
+
+                        <TextView
+                            android:id="@+id/member_address"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/app_padding"
+                            android:hint="请选择区域"
+                            android:gravity="right|center"
+                            android:background="@null"
+                            android:singleLine="true"
+                            android:textColor="@color/primary_text_color"
+                            android:textSize="@dimen/middle_font_size" />
+
+                        <ImageView
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/next_unselect" />
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divide_size"
+                        android:background="@color/divider" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_town"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/list_item_height"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="gone"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="街道"
+                            android:textColor="@color/second_text_color"
+                            android:textSize="@dimen/middle_font_size" />
+
+                        <TextView
+                            android:id="@+id/tv_town"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/app_padding"
+                            android:hint="请选择街道"
+                            android:gravity="right|center"
+                            android:background="@null"
+                            android:singleLine="true"
+                            android:textColor="@color/primary_text_color"
+                            android:textSize="@dimen/middle_font_size" />
+
+                        <ImageView
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/next_unselect" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divide_size"
+                        android:background="@color/divider" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:background="@color/divider" />
+
+            <Button
+                android:id="@+id/confirm"
+                android:background="@drawable/app_btn"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_margin="@dimen/app_padding"
+                android:textSize="18sp"
+                android:text="@string/confirm" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_recipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View style="@style/dividing_line"/>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@color/app_color_white">
+        <TextView
+            android:id="@+id/tv_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big_font_size"
+            android:textColor="@color/color_tag_string"
+            android:text="@string/pay_user"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_name_text"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/big_font_size"
+            android:textColor="@color/color_main_string"/>
+
+        <TextView
+            android:id="@+id/tv_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="@dimen/mini_font_size"
+            android:textColor="@color/color_tag_string"
+            android:layout_alignBaseline="@+id/tv_name"
+            android:layout_alignBottom="@+id/tv_name"
+            android:layout_toRightOf="@+id/tv_name"
+            android:layout_toEndOf="@+id/tv_name" />
+
+        <TextView
+            android:id="@+id/tv_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="@dimen/mini_font_size"
+            android:textColor="@color/color_tag_string"
+            android:layout_toLeftOf="@+id/cb_sign"
+            android:layout_alignBaseline="@+id/tv_sex"
+            android:layout_alignBottom="@+id/tv_sex"
+            android:layout_toRightOf="@+id/tv_sex"
+            android:layout_toEndOf="@+id/tv_sex" />
+
+        <TextView
+            android:id="@+id/tv_tag_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name_text"
+            android:layout_marginTop="12dp"
+            android:textSize="@dimen/big_font_size"
+            android:textColor="@color/color_tag_string"
+            android:text="@string/string_medical_history1"/>
+
+        <TextView
+            android:id="@+id/tv_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name_text"
+            android:layout_toRightOf="@+id/tv_tag_text"
+            android:layout_toLeftOf="@+id/cb_sign"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/big_font_size"
+            android:textColor="@color/color_main_string"/>
+        <TextView
+            android:id="@+id/tv_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tag"
+            android:layout_marginTop="12dp"
+            android:textSize="@dimen/big_font_size"
+            android:textColor="@color/color_tag_string"
+            android:text="@string/string_recipe_time"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tag"
+            android:layout_toRightOf="@+id/tv_time_text"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/big_font_size"
+            android:textColor="@color/color_main_string"/>
+
+        <CheckBox
+            android:id="@+id/cb_sign"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            style="@style/CustomCheckBoxTheme"/>
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text=""
+            android:textSize="@dimen/small_font_size"/>
+
+    </android.support.percent.PercentRelativeLayout>
+    <View android:id="@+id/v_line"
+        android:visibility="gone"
+        style="@style/dividing_line"/>
+</LinearLayout>

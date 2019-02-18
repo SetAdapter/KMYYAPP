@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_size"
+        android:background="@color/color_listview_divider" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_size"
+        android:background="@color/color_listview_divider" />
+
+    <LinearLayout
+        android:id="@+id/rl_edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/list_padding"
+            android:layout_marginRight="@dimen/list_padding"
+            android:background="@null"
+            android:gravity="left|top"
+            android:hint="@string/plz_input_content"
+            android:inputType="textMultiLine"
+            android:maxLength="300"
+            android:minHeight="200dp"
+            android:padding="@dimen/list_padding"
+            android:textSize="@dimen/middle_font_size" />
+
+        <TextView
+            android:id="@+id/tv_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="18dp"
+            android:text="0/300" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/et_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/plz_input_nickname"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="@dimen/middle_font_size" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_size"
+        android:background="@color/color_listview_divider" />
+
+
+</LinearLayout>

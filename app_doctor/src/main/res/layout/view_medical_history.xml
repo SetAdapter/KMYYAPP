@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="100dp"
+             android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/iv_medical_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv_name_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#44666666"
+        android:gravity="center"
+        android:text="2017年4月1日"
+        android:textColor="@color/color_main_white"
+        android:textSize="@dimen/micro_font_size"/>
+
+</FrameLayout>

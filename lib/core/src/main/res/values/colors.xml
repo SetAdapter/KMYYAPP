@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_primary_color">#0accce</color>
+    <color name="app_primary_dark_color">#45b9de</color>
+
+    <!-- 默认背影 灰 -->
+    <color name="common_bg">#F0F0F0</color>
+    <!-- 描边 -->
+    <color name="common_stroke">#d5d5d5</color>
+    <!-- 菜单分隔线 -->
+    <color name="common_menu_line">#4c555f</color>
+
+    <!-- 深深灰 -->
+    <color name="common_text1">#333333</color>
+    <!-- 深灰 -->
+    <color name="common_text2">#666666</color>
+    <!-- 浅灰 -->
+    <color name="common_text3">#999999</color>
+    <!-- 浅浅灰 -->
+    <color name="common_text4">#cccccc</color>
+
+
+
+    <!--           网络医院APP视觉规范 统一颜色  2017-06-29             -->
+    <!--APP主色-->
+    <color name="color_main_green">#0accce</color>
+    <color name="color_main_white">#ffffff</color>
+    <!--辅助色-->
+    <color name="color_main_yellow">#f9a821</color>
+    <color name="color_main_orange">#ff7f66</color>
+    <color name="color_main_light_green">#05d77c</color>
+    <color name="color_main_dark_green">#14757a</color>
+
+    <!--文字-->
+    <!--主要文字-->
+    <color name="color_main_string">#333333</color>
+    <!--标签性文字-->
+    <color name="color_tag_string">#666666</color>
+    <!--辅助次要文字-->
+    <color name="color_sub_string">#999999</color>
+    <!--页面说明文字-->
+    <color name="color_hint_string">#b3b3b3</color>
+
+    <!--底色和分隔线-->
+
+    <!--所有 activity 的背景颜色-->
+    <color name="color_main_bg">#f7f7f7</color>
+    <!--所有分隔线的颜色-->
+    <color name="color_listview_divider">#d5d5d5</color>
+    <!--不可点击的颜色-->
+    <color name="color_unclick">#cecece</color>
+
+    <!--绿色按钮-->
+    <color name="color_button_green">#0accce</color>
+    <!--绿色点击-->
+    <color name="color_button_click_green">#2fa7ab</color>
+    <!--灰色按钮-->
+    <color name="color_button_gray">#cecece</color>
+    <!--黄色按钮-->
+    <color name="color_button_yellow">#f9a821</color>
+    <!--黄色点击-->
+    <color name="color_button_click_yellow">#d79223</color>
+    <!--橘黄色按钮-->
+    <color name="color_button_orange">#ff7f66</color>
+    <!--橘黄色点击-->
+    <color name="color_button_click_orange">#d66e59</color>
+
+    <!--首页消息数的红色-->
+    <color name="color_message_bg">#ff7f66</color>
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <color name="pickerview_bgColor_overlay">#60000000</color>
+    <color name="pickerview_bgColor_default">#FFFFFFFF</color>
+</resources>

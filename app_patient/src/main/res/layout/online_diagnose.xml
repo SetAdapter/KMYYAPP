@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/online_diagnose_title_bg"
+            >
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/serch_title"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                />
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_toRightOf="@id/iv_search"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:textSize="@dimen/middle_font_size"
+                android:textColorHint="@color/md_grey_500"
+                android:textColor="@color/md_grey_500"
+                android:hint="@string/search_doctor_hospital"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:singleLine="true"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_size"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/tv_noResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:visibility="gone"
+        android:textSize="@dimen/small_font_size"
+        android:textColor="@color/third_text_color"
+        android:gravity="center"
+        android:text="没有找到相关医生，请换个关键词试试！"
+        />
+
+    <com.winson.ui.widget.listview.PageListView
+        android:id="@+id/doctor_page_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

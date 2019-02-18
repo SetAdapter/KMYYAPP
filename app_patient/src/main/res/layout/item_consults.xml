@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+            android:id="@+id/ll_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/layout_click_selector"
+            android:orientation="vertical"
+            >
+
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:background="@color/divider"/>
+
+        <!-- 标题栏：咨询类型，状态 -->
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                >
+
+            <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="免费咨询"
+                    android:textColor="@color/app_text_default_step_color"
+                    android:textSize="16sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+
+            <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="未回复"
+                    android:textColor="@color/color_button_yellow"
+                    android:textSize="@dimen/middle_font_size"
+                    />
+
+        </RelativeLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:background="@color/divider"/>
+
+        <!-- 第一栏文字 -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                >
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/pay_user2"
+                    android:textColor="@color/app_text_default_step_color"
+                    android:textSize="14sp"
+                    />
+
+            <TextView
+                    android:id="@+id/tv_of_patient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/app_text_top_color"
+                    android:textSize="@dimen/middle_font_size"
+                    />
+        </LinearLayout>
+
+        <!-- 第二栏文字 -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                >
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/inspection_doctor"
+                    android:textColor="@color/app_text_default_step_color"
+                    android:textSize="14sp"
+                    />
+
+            <TextView
+                    android:id="@+id/seeing_the_doctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/app_text_top_color"
+                    android:textSize="@dimen/middle_font_size"
+                    />
+        </LinearLayout>
+
+
+        <!-- 第三栏文字 -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                >
+
+            <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/appointment_time"
+                    android:textColor="@color/app_text_default_step_color"
+                    android:textSize="14sp"/>
+
+            <TextView
+                    android:id="@+id/subscribe_time_frame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/app_text_top_color"
+                    android:textSize="@dimen/middle_font_size"
+                    />
+        </LinearLayout>
+
+
+        <!-- 第四栏文字 -->
+        <LinearLayout
+                android:id="@+id/ll4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                >
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/consult_describe"
+                    android:textColor="@color/app_text_default_step_color"
+                    android:textSize="14sp"
+                    />
+
+            <TextView
+                    android:id="@+id/illness_describe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/app_text_top_color"
+                    android:textSize="@dimen/middle_font_size"
+                    />
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:background="@color/divider"
+                />
+
+
+        <!-- 价格按钮栏 -->
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/root_price_btn"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:minHeight="30dp"-->
+        <!--android:paddingBottom="4dp"-->
+        <!--android:paddingLeft="12dp"-->
+        <!--android:paddingRight="12dp"-->
+        <!--android:paddingTop="4dp"-->
+        <!--&gt;-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_amount_lab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:singleLine="true"-->
+        <!--android:text="合计："-->
+        <!--android:textColor="@color/third_text_color"-->
+        <!--android:textSize="@dimen/small_font_size"-->
+        <!--/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_rmb_sign"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:layout_toRightOf="@id/tv_amount_lab"-->
+        <!--android:singleLine="true"-->
+        <!--android:text="¥"-->
+        <!--android:textColor="@color/third_text_color"-->
+        <!--android:textSize="@dimen/big_font_size"-->
+        <!--/>-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--&gt;-->
+        <!--<TextView-->
+        <!--android:visibility="gone"-->
+        <!--android:id="@+id/cancel_order"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/btn_unfollow"-->
+        <!--android:paddingBottom="5dp"-->
+        <!--android:paddingLeft="12dp"-->
+        <!--android:paddingRight="12dp"-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:textColor="@color/third_text_color"-->
+        <!--android:textSize="@dimen/small_font_size"-->
+        <!--android:text="@string/cancel_order"/>-->
+
+        <!--<TextView-->
+        <!--android:visibility="gone"-->
+        <!--android:id="@+id/delete_order"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/btn_follow"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_toRightOf="@id/cancel_order"-->
+        <!--android:paddingBottom="5dp"-->
+        <!--android:paddingLeft="12dp"-->
+        <!--android:paddingRight="12dp"-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:textColor="@color/primary_press_color"-->
+        <!--android:textSize="@dimen/small_font_size"-->
+        <!--android:text="删除订单"-->
+
+        <!--/>-->
+
+        <!--<TextView-->
+        <!--android:visibility="gone"-->
+        <!--android:id="@+id/tv_evaluate"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:background="@drawable/btn_follow"-->
+        <!--android:layout_toRightOf="@id/delete_order"-->
+        <!--android:paddingBottom="5dp"-->
+        <!--android:paddingLeft="12dp"-->
+        <!--android:paddingRight="12dp"-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:text="@string/goto_evaluate"-->
+        <!--android:textColor="@color/primary_press_color"-->
+        <!--android:textSize="@dimen/small_font_size"-->
+
+        <!--/>-->
+        <!--</RelativeLayout>-->
+
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_amount"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingRight="5dp"-->
+        <!--android:singleLine="true"-->
+        <!--android:textColor="@color/second_text_color"-->
+        <!--android:textSize="@dimen/middle_font_size"-->
+        <!--android:text="110"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_toRightOf="@+id/tv_rmb_sign"-->
+        <!--android:layout_toEndOf="@+id/tv_rmb_sign"/>-->
+        <!--</RelativeLayout>-->
+
+        <View
+                android:id="@+id/line_price_btn"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/divider"
+                />
+    </LinearLayout>
+</FrameLayout>

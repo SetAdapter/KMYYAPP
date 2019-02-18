@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_item_list"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp">
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_msg_sys"/>
+
+    <ImageView
+        android:id="@+id/iv_status"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerVertical="true"
+        android:paddingLeft="35dp"
+        android:paddingBottom="35dp"
+        android:src="@drawable/shape_notice"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_toRightOf="@+id/iv_image"
+        android:layout_toLeftOf="@+id/tv_time"
+        android:layout_marginLeft="10dp"
+        android:text="标题"
+        android:textSize="@dimen/big_font_size"
+        android:textColor="@color/color_main_string"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:maxLines="1"
+        android:textSize="@dimen/small_font_size"
+        android:text="2014-03-04"
+        android:textColor="@color/color_sub_string"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_image"
+        android:layout_below="@+id/tv_title"
+        android:text="内容"
+        android:textSize="@dimen/small_font_size"
+        android:textColor="@color/color_sub_string"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:lineSpacingExtra="5dp" />
+
+    <View style="@style/dividing_line"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

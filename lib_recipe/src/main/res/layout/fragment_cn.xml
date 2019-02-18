@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:background="@drawable/layout_shape">
+
+                <TextView
+                    android:id="@+id/tv_diag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_diagnosis"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/color_main_string"
+                    android:paddingLeft="15dp"
+                    android:paddingBottom="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/color_sub_string"
+                    android:layout_marginTop="30dp"/>
+
+                <doctor.kmwlyy.com.recipe.View.MyListView
+                    android:id="@+id/lv_diagnosis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"></doctor.kmwlyy.com.recipe.View.MyListView>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_color_string_4"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:background="@color/app_color_white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_pres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_string_recipe1"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/color_main_string"
+                    android:paddingLeft="15dp"
+                    android:paddingBottom="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/color_sub_string"/>
+
+                <doctor.kmwlyy.com.recipe.View.MyListView
+                    android:id="@+id/lv_cn_druglist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </doctor.kmwlyy.com.recipe.View.MyListView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_color_string_4"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@color/app_color_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/string_unit6"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/color_main_string"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/string_unit7"
+                    android:background="@drawable/tv_shape"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/color_main_string"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/et_jishu"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/et_shape"/>
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/tv_shape"
+                    android:text="@string/string_unit8"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/color_main_string"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@color/app_color_white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/string_usage"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/color_main_string"
+                    android:gravity="top"/>
+
+                <EditText
+                    android:id="@+id/et_usage"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"
+                    android:gravity="left|top"
+                    android:textColor="@color/color_main_string"
+                    android:background="@drawable/et_shape"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/app_color_white"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/string_total"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/color_tag_string"
+                    android:gravity="right"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/tv_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/color_tag_string"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

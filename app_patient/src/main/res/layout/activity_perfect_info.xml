@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <com.winson.ui.widget.CleanableEditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/card_bg"
+            android:drawableRight="@drawable/icon_edit_delete"
+            android:drawablePadding="5dp"
+            android:hint="请输入您的姓名"
+            android:singleLine="true"
+            android:textColor="@color/second_text_color"
+            android:textColorHint="@color/app_text_default_color"
+            android:textSize="@dimen/middle_font_size" />
+
+        <com.winson.ui.widget.CleanableEditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/id_card"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card_bg"
+            android:drawableRight="@drawable/icon_edit_delete"
+            android:hint="请输入您的身份证号"
+            android:singleLine="true"
+            android:textColor="@color/second_text_color"
+            android:textColorHint="@color/app_text_default_color"
+            android:textSize="@dimen/middle_font_size" />
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider"/>
+
+        <RelativeLayout
+            android:id="@+id/area_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所在区域："
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/middle_font_size"/>
+
+            <ImageView
+                android:id="@+id/iv_more_quyu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_more"/>
+
+            <TextView
+                android:id="@+id/area_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_toLeftOf="@+id/iv_more_quyu"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/middle_font_size"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider"/>
+
+        <RelativeLayout
+            android:id="@+id/row_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+           android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="街道："
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/middle_font_size"/>
+
+            <ImageView
+                android:id="@+id/iv_more_jiedao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_more"/>
+
+            <TextView
+                android:id="@+id/tvStrweetName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_toLeftOf="@+id/iv_more_jiedao"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/middle_font_size"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider"/>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/familyaddress"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="请输入家庭详细地址"
+            android:background="@drawable/edit_bg"
+            android:padding="12dp"
+            android:textColor="@color/primary_text_color"
+            android:textSize="14sp"/>
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/submit"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确认"
+            />
+    </LinearLayout>
+
+</LinearLayout>

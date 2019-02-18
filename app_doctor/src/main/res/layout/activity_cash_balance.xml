@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+              android:orientation="vertical"
+    >
+
+    <include layout="@layout/app_base_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/lay_operate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    >
+
+                    <TextView
+                        style="@style/tv_content_black"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/string_enable_money"/>
+
+                    <TextView
+                        android:id="@+id/currentBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="￥0.00"
+                        android:textColor="#FF0000"/>
+                </LinearLayout>
+
+                <View style="@style/dividing_line"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/string_bank_card_num1"
+                        android:textColor="@color/color_tag_string"
+                        android:textSize="@dimen/big_font_size"/>
+
+                    <Spinner
+                        android:id="@+id/sp_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/et_bg"
+                        android:drawableRight="@mipmap/icon_arrow_down1"
+                        android:layout_marginRight="10dp"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/string_choose_card"
+                        android:minHeight="40dp"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/color_main_string"
+                        android:textSize="@dimen/big_font_size"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/string_bank_info2"
+                        android:textColor="@color/color_tag_string"
+                        android:textSize="@dimen/big_font_size"/>
+
+                    <EditText
+                        android:id="@+id/et_get"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/et_bg"
+                        android:hint="@string/string_account_money"
+                        android:minHeight="40dp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/big_font_size"/>
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/string_bank_info3"
+                        android:textColor="@color/color_tag_string"
+                        android:textSize="@dimen/big_font_size"/>
+                </LinearLayout>
+                <View style="@style/dividing_line"/>
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_shape1"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/string_next_step"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <!-- 提现结果 -->
+
+            <LinearLayout
+                android:id="@+id/lay_result"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/tv_content_black"
+                    android:text="@string/string_crash_success"/>
+
+                <TextView
+                    style="@style/tv_content_black"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/string_crash_success_info"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

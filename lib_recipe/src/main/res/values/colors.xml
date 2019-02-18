@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_color_main">#0accce</color>
+    <color name="listview_line">@color/app_color_string_4</color>
+    <color name="app_color_string">#f9a821</color>
+    <color name="app_color_white">#ffffff</color>
+    <color name="app_color_darkgreen">#14757a</color>
+    <color name="app_color_string_4">#e7e7e7</color>
+</resources>

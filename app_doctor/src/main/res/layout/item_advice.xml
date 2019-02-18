@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:descendantFocusability="blocksDescendants"
+              android:background="@color/color_main_bg"
+              android:orientation="vertical">
+
+    <View style="@style/dividing_line"
+        android:layout_marginTop="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_color_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:padding="15dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="@string/string_patient"
+                    android:textColor="@color/color_tag_string"
+                    android:textSize="@dimen/big_font_size"/>
+
+                <TextView
+                    android:id="@+id/tv_patient"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:textColor="@color/color_tag_string"
+                    android:textSize="@dimen/big_font_size"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="@string/string_state"
+                    android:textColor="@color/color_tag_string"
+                    android:textSize="@dimen/big_font_size"/>
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:textColor="@color/app_color_main"
+                    android:textSize="@dimen/big_font_size"/>
+
+                <Button
+                    android:id="@+id/btn_call"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/btn_follow"
+                    android:text="@string/string_call"
+                    android:textColor="@color/app_color_main"
+                    android:textSize="@dimen/big_font_size"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_appointment"
+                    android:textColor="@color/color_tag_string"
+                    android:textSize="@dimen/big_font_size"/>
+
+                <TextView
+                    android:id="@+id/tv_appointment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:textColor="@color/color_tag_string"
+                    android:textSize="@dimen/big_font_size"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View style="@style/dividing_line"
+        android:layout_marginBottom="5dp"/>
+</LinearLayout>

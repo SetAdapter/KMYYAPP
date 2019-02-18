@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_en"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:id="@+id/ll_endrug_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:text="@string/string_drug_name"
+            android:textColor="@color/color_main_string"
+            android:textSize="@dimen/middle_font_size"/>
+
+        <doctor.kmwlyy.com.recipe.View.DrugAutoCompleteTextView
+            android:id="@+id/et_endrug_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@color/color_main_string"
+            android:background="@drawable/et_shape"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:text="@string/string_unit4"
+            android:textColor="@color/color_main_string"
+            android:textSize="@dimen/middle_font_size"/>
+
+        <TextView
+            android:id="@+id/tv_Specification"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/tv_shape"
+            android:textColor="@color/color_main_string"
+            android:textSize="@dimen/middle_font_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_endrug_item"
+        android:layout_below="@+id/ll_endrug_name"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:text="@string/string_unit9"
+            android:textColor="@color/color_main_string"
+            android:textSize="@dimen/middle_font_size"/>
+        <doctor.kmwlyy.com.recipe.View.MyEditView
+            android:id="@+id/et_unit"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="30dp"
+            android:textColor="@color/color_main_string"
+            android:inputType="numberDecimal"
+            android:background="@drawable/et_shape"/>
+
+        <TextView
+            android:id="@+id/tv_unit"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/tv_shape"
+            android:layout_marginRight="20dp"
+            android:text="   "
+            android:textColor="@color/color_main_string"
+            android:textSize="@dimen/middle_font_size"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:text="@string/string_unit5"
+            android:textColor="@color/color_main_string"
+            android:textSize="@dimen/middle_font_size"/>
+
+        <doctor.kmwlyy.com.recipe.View.MyEditView
+            android:id="@+id/et_doseunit"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="30dp"
+            android:inputType="numberDecimal"
+            android:background="@drawable/et_shape"/>
+
+        <TextView
+            android:id="@+id/tv_doseunit"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/tv_shape"
+            android:text="    "
+            android:textColor="@color/color_main_string"
+            android:textSize="@dimen/middle_font_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:text="@string/string_unit3"
+            android:textColor="@color/color_main_string"
+            android:textSize="@dimen/middle_font_size"/>
+
+        <doctor.kmwlyy.com.recipe.View.MySpinner
+            android:id="@+id/sp_endrug_unit3"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="30dp"
+            android:background="@drawable/et_shape"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:text="@string/string_unit10"
+            android:textColor="@color/color_main_string"
+            android:textSize="@dimen/middle_font_size"/>
+
+        <doctor.kmwlyy.com.recipe.View.MySpinner
+            android:id="@+id/sp_endrug_unit4"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="30dp"
+            android:background="@drawable/et_shape"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_subtotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll_endrug_item"
+        android:gravity="right">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="@dimen/middle_font_size"
+            android:text="@string/string_unit_total"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/tv_endrug_subtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="@dimen/middle_font_size"
+            android:layout_below="@+id/ll_endrug_item"
+            android:layout_alignParentRight="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/ll_subtotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:drawableLeft="@mipmap/icon_add"
+            android:visibility="gone"
+            android:textSize="@dimen/middle_font_size"
+            android:text="@string/string_add"/>
+        <doctor.kmwlyy.com.recipe.View.MyDeleteTextView
+            android:id="@+id/tv_delete"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:drawableLeft="@mipmap/icon_delete"
+            android:textSize="@dimen/middle_font_size"
+            android:text="@string/string_delete"/>
+    </LinearLayout>
+</LinearLayout>

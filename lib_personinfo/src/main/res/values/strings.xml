@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Person Info</string>
+    <string name="person_data">个人资料</string>
+    <string name="loading">加载中</string>
+    <string name="back_to_home">返回</string>
+    <string name="nickname_modification_title">昵称修改</string>
+    <string name="good_at_disease_title">擅长疾病</string>
+    <string name="intro_title">个人简介</string>
+    <string name="nickname_can_not_null">昵称不能为空</string>
+    <string name="save_info">数据保存中...</string>
+    <string name="save_fail">失败</string>
+    <string name="nickname">昵称</string>
+    <string name="name">姓名</string>
+    <string name="get_patient_info_fail">获取患者个人资料失败</string>
+    <string name="get_doctor_info_fail">获取医生个人资料失败</string>
+    <string name="post_fail">上传失败</string>
+    <string name="head_photo">头像</string>
+    <string name="phone_number">手机号</string>
+    <string name="save">保存</string>
+    <string name="plz_input_content">请输入内容</string>
+    <string name="plz_input_nickname">请输入昵称</string>
+    <string name="save_head_photo">上传头像中...</string>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="@dimen/list_padding"
+    android:paddingLeft="@dimen/app_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="@dimen/list_padding">
+
+        <TextView
+            android:id="@+id/member_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="100dp"
+            android:singleLine="true"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/middle_font_size" />
+
+        <TextView
+            android:id="@+id/member_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/middle_font_size" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_size"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="@dimen/list_padding">
+
+        <CheckBox
+            android:id="@+id/set_default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableLeft="@drawable/bg_ios_check"
+            android:drawablePadding="5dp"
+            android:text="@string/set_default"
+            android:textColor="@color/second_text_color"
+            android:textSize="@dimen/small_font_size" />
+
+        <TextView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/edit"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/edit"
+            android:textColor="@color/color_tag_string"
+            android:textSize="@dimen/middle_font_size" />
+
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/list_padding"
+            android:drawableLeft="@drawable/delete"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/delete"
+            android:textColor="@color/color_tag_string"
+            android:textSize="@dimen/middle_font_size" />
+
+    </LinearLayout>
+
+</LinearLayout>

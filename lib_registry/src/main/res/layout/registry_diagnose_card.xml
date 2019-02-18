@@ -1,0 +1,171 @@
+<LinearLayout
+    android:id="@+id/registry_d_card_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone"
+    >
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_stroke"/>
+
+    <LinearLayout
+        android:id="@+id/ll_registry_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="@string/visit_hospital"
+            android:textColor="@color/common_text2"
+            android:textSize="@dimen/big_font_size"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/registry_first"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:text="@string/r_first_diagnose"
+                android:textColor="@color/common_text2"
+                android:textSize="@dimen/big_font_size"
+                />
+
+            <RadioButton
+                android:id="@+id/registry_return"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:text="@string/r_return_diagnose"
+                android:textColor="@color/common_text2"
+                android:textSize="@dimen/big_font_size"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_registry_first"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_stroke"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_registry_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/tv_cardNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="@string/r_diagnose_card"
+            android:textColor="@color/common_text2"
+            android:textSize="@dimen/big_font_size"/>
+
+        <EditText
+            android:id="@+id/et_cardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical|right"
+            android:hint="@string/r_input_diagnose_card"
+            android:padding="15dp"
+            android:textColor="@color/common_text2"
+            android:textColorHint="@color/common_text4"
+            android:textSize="@dimen/big_font_size"
+            android:maxLength="64"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_registry_card"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_stroke"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_registry_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/tv_cardPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="@string/r_diagnose_password"
+            android:textColor="@color/common_text2"
+            android:textSize="@dimen/big_font_size"/>
+
+        <EditText
+            android:id="@+id/et_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical|right"
+            android:hint="@string/r_input_diagnose_password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="@color/common_text2"
+            android:textColorHint="@color/common_text4"
+            android:textSize="@dimen/big_font_size"
+            android:maxLength="64"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_registry_password"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_stroke"
+        android:visibility="gone"
+        />
+</LinearLayout>

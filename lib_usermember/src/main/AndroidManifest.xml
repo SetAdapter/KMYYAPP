@@ -1,0 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kmwlyy.usermember">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".UserMemberEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserMemberListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserMemberSelectActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

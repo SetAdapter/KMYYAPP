@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kmwlyy.patient">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- 通过GPS得到精确位置 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 通过网络得到粗略位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".PApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".AppStart">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".account.ModifyPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlinediagnose.DoctorServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlinediagnose.BuyIMConsultActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".onlinediagnose.BuyFamilyDoctorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".myservice.DiagnoseDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".myservice.PrescriptionPayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".myservice.DeliveryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.DoctorDutyListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pay.PayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".account.AccountManagementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".account.RechargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".account.WithdrawActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".account.AccountDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".account.SetPaymentCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".casehistory.ElectronCaseHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".casehistory.EditCaseHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".casehistory.PhotoViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".myplan.MyPlanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".myplan.MembersPlanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlinediagnose.BuyVideoConsultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlinediagnose.BuyVVConsultActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".evaluate.EvaluateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".evaluate.EvaluateForDoctorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".myservice.MyFamilyDoctorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".account.BindMobileActivity"
+            android:screenOrientation="portrait" />
+        <!-- 康美支付页面 -->
+        <activity
+            android:name="com.kmt518.kmpay.WebViewActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 微信支付页面 -->
+        <activity
+            android:name="com.kangmeitongu.main.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".main.GuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.H5WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".evaluate.EvaluateListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.SoftIntroduceActivity"
+            android:screenOrientation="portrait" />
+        <!-- 健康资讯列表页 -->
+        <activity
+            android:name=".home.HealthInfoListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 健康资讯详情页 -->
+        <activity
+            android:name=".home.HealthInfoDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 设置页面 -->
+        <activity
+            android:name=".center.SettingActivity"
+            android:screenOrientation="portrait" />
+        <!-- 家庭医生列表 -->
+        <activity
+            android:name=".home.HomeDoctorListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 专家推荐 -->
+        <activity
+            android:name=".home.ExpertRecommendListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的医生 -->
+        <activity
+            android:name=".center.MyDoctorActivity"
+            android:screenOrientation="portrait" />
+        <!-- 意见反馈 -->
+        <activity
+            android:name=".center.FeedBackActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的咨询 -->
+        <activity
+            android:name=".myservice.MyConsultActivity"
+            android:screenOrientation="portrait" />
+        <!-- 音视频咨询详情 -->
+        <activity
+            android:name=".myservice.VVConsultDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 会诊咨询详情 -->
+        <activity
+            android:name=".myservice.MeetingDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的处方页面 -->
+        <activity
+            android:name=".myservice.MyDiagnoseActivity"
+            android:screenOrientation="portrait" />
+        <!-- 查看PDF的页面 -->
+        <activity
+            android:name=".myservice.PDFActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".myservice.LegacyPDFActivity"
+            android:screenOrientation="portrait" />
+        <!-- 选择要购买的处方页面 -->
+        <activity
+            android:name=".myservice.SelectDiagnoseActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogActivity" />
+        <activity
+            android:name=".jpush.MyMessageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.myservice.BaseServiceActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.myservice.MyServiceActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.myservice.PaymentActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.myservice.SelectBuyWayActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.myservice.BuyServicePackageInfoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.myservice.SelectVisitingPersonActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.myservice.ServicePackageDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.myorder.MyOrderActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.myorder.ConsumeParticularsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlinediagnose.OnlineDiagnoseActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.PerfectInfoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.InhabitantStart.InhabitanStartActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.teamdetail.TeamDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.myfamiiydoctor.FamilyDoctorActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.familydoctorteam.FamilyDoctorTeamActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.addfamilymember.AddFamilyMemberActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.signagreenment.SignAgreenmentActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.sign_introduce.SignIntroduceActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.termination.TerminationActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.termination.TerminationApplicationActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.doctorMessage.DoctorMessageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.termination.TerminateConfirmActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity android:name=".module.signcomfirm.SignComfirmActivity"/>
+
+        <!--bat相关-->
+        <activity
+            android:name=".kdoctor.activity.AiChatActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".symptomGuide.AiBodyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".symptomGuide.IllnessDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kdoctor.activity.HealthReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kdoctor.activity.CorporeityIdentifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kdoctor.activity.HealthReportActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kdoctor.activity.CommonWebPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kdoctor.activity.NearbyHospitalActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".kdoctor.activity.TcmConstitutionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".kdoctor.activity.UserMemberHealthActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".onlinediagnose.BuyIMConsultFamilyActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".module.sign.SignActivity"/>
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name="com.kmwlyy.patient.jpush.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.jtyy.patient" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

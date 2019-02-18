@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:baselineAligned="false">
+
+    <include android:id="@+id/toolbar" layout="@layout/app_base_title" />
+
+    <TextView
+        android:id="@+id/goto_room"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/app_btn"
+        android:text="@string/goto_diagnose"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/goto_room"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/color_main_bg"
+
+                >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divide_size"
+                    android:background="@color/divider"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <!-- 标题栏：咨询类型，状态 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/third_text_color"
+                        android:textSize="@dimen/middle_font_size"
+                        android:text="@string/meeting_Subject"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/color_button_yellow"
+                        android:textSize="@dimen/middle_font_size"
+                        android:text="进行中"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_subject"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_toRightOf="@id/tv_title"
+                        android:layout_toLeftOf="@id/tv_state"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/second_text_color"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divide_size"
+                    android:background="@color/divider"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:background="@color/white"
+                    >
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/pay_user2"
+                            android:textColor="@color/third_text_color"
+                            android:textSize="@dimen/middle_font_size"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:singleLine="true"
+                            android:textColor="@color/second_text_color"
+                            android:textSize="@dimen/middle_font_size"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/patient_sex"
+                        android:textColor="@color/third_text_color"
+                        android:textSize="@dimen/middle_font_size"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/second_text_color"
+                        android:textSize="@dimen/middle_font_size"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:singleLine="true"
+                        android:text="@string/patient_age"
+                        android:textColor="@color/third_text_color"
+                        android:textSize="@dimen/middle_font_size"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/second_text_color"
+                        android:textSize="@dimen/middle_font_size"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:background="@color/white"
+                    >
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/inspection_doctor"
+                            android:textColor="@color/third_text_color"
+                            android:textSize="@dimen/middle_font_size"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_doctor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:singleLine="true"
+                            android:textColor="@color/second_text_color"
+                            android:textSize="@dimen/middle_font_size"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/diagnose_expense"
+                        android:textColor="@color/third_text_color"
+                        android:textSize="@dimen/middle_font_size"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_expense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/second_text_color"
+                        android:textSize="@dimen/middle_font_size"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:background="@color/white"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/meeting_doctor"
+                        android:textColor="@color/third_text_color"
+                        android:textSize="@dimen/middle_font_size"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_meeting_doctor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/second_text_color"
+                        android:textSize="@dimen/middle_font_size"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="@color/white"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/begin_time"
+                        android:textColor="@color/third_text_color"
+                        android:textSize="@dimen/middle_font_size"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/second_text_color"
+                        android:textSize="@dimen/middle_font_size"
+                        />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divide_size"
+                    android:background="@color/divider"
+                    android:layout_marginTop="10dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/meeting_content"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size"
+                    android:background="@color/white"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divide_size"
+                    android:background="@color/divider"/>
+
+                <TextView
+                    android:id="@+id/tv_meetingContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="@string/nothing"
+                    android:textColor="@color/second_text_color"
+                    android:textSize="@dimen/middle_font_size"
+                    android:background="@color/white"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divide_size"
+                    android:background="@color/divider"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/remind_patient"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size"
+                    android:background="@color/white"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divide_size"
+                    android:background="@color/divider"/>
+                <TextView
+                    android:id="@+id/tv_remind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="@string/nothing"
+                    android:textColor="@color/second_text_color"
+                    android:textSize="@dimen/middle_font_size"
+                    android:background="@color/white"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divide_size"
+                    android:background="@color/divider"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/meeting_summarize"
+                    android:textColor="@color/third_text_color"
+                    android:textSize="@dimen/middle_font_size"
+                    android:background="@color/white"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divide_size"
+                    android:background="@color/divider"/>
+                <TextView
+                    android:id="@+id/tv_summarize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="@string/nothing"
+                    android:textColor="@color/second_text_color"
+                    android:textSize="@dimen/middle_font_size"
+                    android:background="@color/white"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divide_size"
+                    android:background="@color/divider"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_show_diagnose"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:visibility="gone"
+                    >
+                    <TextView
+                        android:id="@+id/btn_show_diagnose"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/btn_unfollow"
+                        android:text="@string/show_diagnose"
+                        android:gravity="center"
+
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

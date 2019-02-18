@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+  >
+    <include layout="@layout/app_base_title"
+        android:id="@+id/in_start"
+        />
+    <com.winson.ui.widget.listview.PageListView
+        android:layout_below="@id/in_start"
+        android:id="@+id/doctor_page_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

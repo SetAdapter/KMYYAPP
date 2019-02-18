@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title"/>
+
+    <View style="@style/dividing_line"
+        android:layout_marginTop="10dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/app_color_white"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView style="@style/tv_content_black"
+                android:text="@string/string_old_pwd"
+                android:textSize="@dimen/big_font_size"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/et_old"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:hint="@string/string_pwd_hint1"
+                android:textSize="@dimen/big_font_size"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:digits="0123456789qwertyuiopasdfghjklzxcvbnm"
+                android:layout_marginRight="10dp"
+                android:password="true"
+                android:background="@color/app_color_white"/>
+        </LinearLayout>
+        <View style="@style/dividing_line" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView style="@style/tv_content_black"
+                android:text="@string/string_new_pwd"
+                android:textSize="@dimen/big_font_size"
+                android:padding="10dp"/>
+
+            <EditText android:id="@+id/et_new"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:hint="@string/string_pwd_hint2"
+                android:padding="5dp"
+                android:textSize="@dimen/big_font_size"
+                android:digits="0123456789qwertyuiopasdfghjklzxcvbnm"
+                android:password="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/app_color_white"/>
+        </LinearLayout>
+        <View style="@style/dividing_line" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView style="@style/tv_content_black"
+                android:text="@string/string_new_pwd1"
+                android:textSize="@dimen/big_font_size"
+                android:padding="10dp"/>
+
+            <EditText android:id="@+id/et_new2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:hint="@string/string_pwd_hint3"
+                android:textSize="@dimen/big_font_size"
+                android:password="true"
+                android:digits="0123456789qwertyuiopasdfghjklzxcvbnm"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/app_color_white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View style="@style/dividing_line" />
+
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/app_btn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large_font_size"
+        android:text="@string/string_complete" />
+
+</LinearLayout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/app_base_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:layout_marginTop="10dp"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:id="@+id/ll_history"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_item_height"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/app_padding"
+                android:paddingRight="12dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/second_text_color"
+                    android:text="@string/case_name" />
+
+                <EditText
+                    android:id="@+id/spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/app_padding"
+                    android:background="@null"
+                    android:layout_weight="1"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="@dimen/big_font_size" />
+                <RelativeLayout
+                    android:id="@+id/rl_option"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/display"
+                    android:layout_centerInParent="true"
+                    />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:background="@color/divider" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:layout_marginTop="10dp"
+                android:background="@color/divider" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_item_height"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/app_padding"
+                android:paddingRight="@dimen/app_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/second_text_color"
+                    android:text="@string/person_seeking_medical_service" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/app_padding"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="@dimen/big_font_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/next_unselect" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:id="@+id/ll_data"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_item_height"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/app_padding"
+                android:paddingRight="@dimen/app_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/second_text_color"
+                    android:text="@string/time_of_see_doctor" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/app_padding"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="@dimen/big_font_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/next_unselect" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:id="@+id/ll_hospital_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_item_height"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/app_padding"
+                android:paddingRight="@dimen/app_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/second_text_color"
+                    android:text="@string/hospital_of_see_doctor" />
+
+                <EditText
+                    android:id="@+id/edit_hospital_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/app_padding"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/plz_input_hospital_name"
+                    android:singleLine="true"
+                    android:textColorHint="@color/second_text_color"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="@dimen/middle_font_size" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:background="@color/divider" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_size"
+                android:layout_marginTop="10dp"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/second_text_color"
+                    android:text="@string/disease_description" />
+
+                <EditText
+                    android:id="@+id/edit_disease_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_edit_consult"
+                    android:hint="@string/plz_input_disease_description"
+                    android:gravity="left|top"
+                    android:minHeight="100dp"
+                    android:textColorHint="@color/second_text_color"
+                    android:padding="10dp"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="@dimen/middle_font_size" />
+
+                <com.winson.ui.widget.ResizeGridView
+                    android:id="@+id/grid_upload_pictures"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="4"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="6dp"
+                    android:singleLine="false"
+                    android:text="@string/add_pic"
+                    android:textColor="@color/second_text_color"
+                    android:textSize="@dimen/middle_font_size" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divide_size"
+                    android:background="@color/divider" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

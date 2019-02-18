@@ -1,0 +1,22 @@
+<com.winson.ui.widget.RateLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:rate_layout="0.4537"
+    app:rate_oritation="horization"
+    android:background="@color/white"
+    >
+
+    <com.winson.ui.widget.CircleViewPager
+        android:id="@+id/home_banner_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.winson.ui.widget.PagerIndicator
+        android:id="@+id/home_banner_indicator"
+        android:layout_width="100dp"
+        android:layout_height="8dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="10dp" />
+</com.winson.ui.widget.RateLayout>

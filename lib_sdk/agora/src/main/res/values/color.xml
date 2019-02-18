@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#f9a821</color>
+    <color name="yellow_time">#fffd00</color>
+    <color name="remote_user_bg">#3B3E4D</color>
+    <color name="app_primary_color">#0accce</color>
+</resources>

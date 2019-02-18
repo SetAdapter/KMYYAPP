@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_day"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_shape"
+    android:gravity="center">
+
+
+    <!--一个自动转为正方型的VIEW-->
+    <com.winson.ui.widget.RateLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:rate_oritation="horization"
+        app:rate_layout="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:textSize="@dimen/micro_font_size"
+                android:textColor="@color/color_tag_string"/>
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/micro_font_size"
+                android:textColor="@color/color_tag_string"/>
+
+        </LinearLayout>
+
+    </com.winson.ui.widget.RateLayout>
+
+
+
+
+</LinearLayout>

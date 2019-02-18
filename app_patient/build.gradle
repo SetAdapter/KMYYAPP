@@ -1,0 +1,109 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+apply plugin:'newlens'
+
+
+android {
+    compileSdkVersion Integer.parseInt(project.compileSdkVersion)
+    buildToolsVersion project.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion Integer.parseInt(project.minSdkVersion)
+        targetSdkVersion Integer.parseInt(project.targetSdkVersion)
+        applicationId "com.jtyy.patient"
+        //applicationId "com.kangmeitongu.main"
+        versionCode 2017051301
+        versionName "4.1.1"
+        multiDexEnabled true
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+               // JPUSH_APPKEY : "92c709698fe28b64f65d7d97", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+                JPUSH_APPKEY : "8340012068cd0753503d343f"
+        ]
+    }
+
+    signingConfigs{
+
+        debug{
+            storeFile file("../keystore/KmtApp.keystore")
+            storePassword "kmt518"
+            keyAlias "kmt518"
+            keyPassword "kmt518"
+        }
+
+    }
+
+    buildTypes {
+
+//        debug {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dexOptions {
+        jumboMode true
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+        disable 'MissingTranslation'
+    }
+
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:design:24.1.1'
+    compile 'com.android.support:support-v4:24.1.1'
+    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.jakewharton:butterknife:8.2.1'
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
+    compile 'com.github.lovetuzitong:MultiImageSelector:1.2'
+    compile project(':lib:core')
+    compile project(':lib:ui')
+    compile project(':lib_login')
+    compile project(':lib_registry')
+    compile project(':lib_address')
+    compile project(':lib_usermember')
+    compile project(':lib_personinfo')
+    compile project(':lib_3rd:pagerSlidingTabStrip')
+    compile project(':lib_sdk:agora')
+    compile project(':lib_3rd:ViewPagerIndicatorLib')
+    compile 'cn.jiguang:jpush:2.2.0'
+    compile project(':lib_pdfread')
+    //compile fileTree(include: ['nbs.newlens.agent.jar'], dir: 'C:\\Program Files')
+    //agent的jar包会嵌入在apk中
+    compile 'com.afollestad.material-dialogs:core:0.8.5.9'
+    compile project(':cptr')
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+       // classpath fileTree(dir: 'C:\\Program Files', include: ['nbs.newlens.class.rewriter.jar']) //听云sdk的编译插件,不会嵌入在apk中
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+}

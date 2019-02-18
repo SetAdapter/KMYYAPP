@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/selector_arrow_left"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:id="@+id/search"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:background="@drawable/search_bg"
+                android:drawableLeft="@mipmap/icon_search_dark"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical|left"
+                android:hint="@string/search_patient_notify"
+                android:paddingLeft="10dp"
+                android:textColor="@color/text_second"
+                android:textColorHint="@color/text_second"
+                android:textSize="12.48sp" />
+
+            <TextView
+                android:id="@+id/divide_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="@string/divide_group"
+                android:textColor="@color/selector_title_text"
+                android:textSize="@dimen/middle_font_size" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/base_title_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_listview_divider" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/group_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/color_listview_divider"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/patient_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

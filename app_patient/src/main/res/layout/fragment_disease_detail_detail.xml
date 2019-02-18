@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/symptom_drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/btn_orange_corner_bg">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/scorollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/arrow_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:src="@mipmap/disease_baike_arrow_up"
+                    android:layout_alignParentRight="true"/>
+                <TextView
+                    android:id="@+id/disease_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="10dp"
+                    android:text="感冒"
+                    android:gravity="left|center_vertical"
+                    android:layout_toLeftOf="@id/arrow_iv"
+                    android:textColor="#333333"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/tv_symptom_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:lineSpacingExtra="3dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="的师傅斯蒂芬斯蒂芬斯蒂芬是范德萨范德萨方式是方式方法诉讼费舒服舒服"
+                    android:layout_below="@id/disease_title"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_symptom_close"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/login_bt_login"
+                    android:text="关闭"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginRight="-65dp"
+        android:background="@color/action_text"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_symptom_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="返回"
+                android:textColor="@color/app_primary_color"
+                android:textSize="18sp" />
+
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/lineColor"
+                android:orientation="vertical"/>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawableLeft="@mipmap/icon_jb"
+                        android:drawablePadding="10dp"
+                        android:text="疾病名称"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/lineColor"
+                        android:orientation="vertical"/>
+
+                    <TextView
+                        android:id="@+id/illness_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="36dp"
+                        android:padding="10dp"
+                        android:text="名称"
+                        android:textColor="@drawable/selector_pitch_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/lineColor"
+                        android:orientation="vertical"/>
+
+                    <TextView
+                        android:id="@+id/dept_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawableLeft="@mipmap/icon_jzks"
+                        android:drawablePadding="10dp"
+                        android:text="就诊科室"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/lineColor"
+                        android:orientation="vertical"/>
+
+                    <TextView
+                        android:id="@+id/related_symptom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="36dp"
+                        android:padding="10dp"
+                        android:text="相关症状"
+                        android:textColor="@drawable/selector_pitch_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/lineColor"
+                        android:orientation="vertical"/>
+
+                    <TextView
+                        android:id="@+id/intercurrent_symptom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="36dp"
+                        android:padding="10dp"
+                        android:text="并发症"
+                        android:textColor="@drawable/selector_pitch_color"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/lineColor"
+                        android:orientation="vertical"/>
+
+                    <TextView
+                        android:id="@+id/impressionable_people"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="36dp"
+                        android:padding="10dp"
+                        android:text="易感人群"
+                        android:textColor="@drawable/selector_pitch_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/lineColor"
+                        android:orientation="vertical"/>
+
+                    <TextView
+                        android:id="@+id/cure_probability"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="36dp"
+                        android:padding="10dp"
+                        android:text="治愈率"
+                        android:textColor="@drawable/selector_pitch_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/lineColor"
+                        android:orientation="vertical"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawableLeft="@mipmap/icon_xglf"
+                        android:drawablePadding="10dp"
+                        android:text="相关疗法"
+                        android:textSize="@dimen/avatar_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/lineColor"
+                        android:orientation="vertical"/>
+
+
+                    <TextView
+                        android:id="@+id/check_way"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="36dp"
+                        android:padding="10dp"
+                        android:text="检查方式"
+                        android:textColor="@drawable/selector_pitch_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/lineColor"
+                        android:orientation="vertical"/>
+
+                    <TextView
+                        android:id="@+id/treat_way"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="36dp"
+                        android:padding="10dp"
+                        android:text="治疗方式"
+                        android:textColor="@drawable/selector_pitch_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/lineColor"
+                        android:orientation="vertical"/>
+
+                    <TextView
+                        android:id="@+id/prevent_way"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="36dp"
+                        android:padding="10dp"
+                        android:text="预防护理"
+                        android:textColor="@drawable/selector_pitch_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/lineColor"
+                        android:orientation="vertical"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_symptom_drawer_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@null"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="轻触这里关闭目录"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_sysmtom_click" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">core</string>
+
+    <string name="string_dialog_title">系统提示</string>
+    <string name="string_dialog_update">是否需要更新版本？</string>
+    <string name="string_yes">确认</string>
+    <string name="string_no">下次更新</string>
+    <string name="string_check_update">正在检查版本更新</string>
+    <string name="string_download">最新版本正在后台下载</string>
+    <string name="string_downloading">正在下载...</string>
+
+    <string name="string_app_patient">康美医疗</string>
+    <string name="string_app_doctor">康美医生</string>
+    <string name="string_version_update">发现新版本</string>
+    <string name="string_is_update">，是否立即更新？</string>
+    <string name="string_download_failed">下载失败，请稍后再试！</string>
+
+    <string name="string_net_error">请检查当前网络设置</string>
+    <string name="string_try_later">系统繁忙，请稍后再试</string>
+    <string name="string_analysis_failed">数据解析失败</string>
+
+
+    <string name="just_now">刚刚</string>
+    <string name="minute_ago">%1$s分钟前</string>
+    <string name="hour_ago">%1$s小时前</string>
+    <string name="day_ago">%1$s天前</string>
+    <string name="close_push">正在关闭推送...</string>
+    <string name="open_push">正在打开推送...</string>
+    <string name="open_push_fail">打开推送失败，请稍后再试！</string>
+    <string name="close_push_fail">关闭推送失败，请稍后再试！</string>
+
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+</resources>

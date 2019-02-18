@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">patient</string>
+    <string name="add_member_success">添加家庭成员成功</string>
+    <string name="add_member_failed">添加家庭成员失败</string>
+    <string name="user_member">家庭成员</string>
+    <string name="confirm">确认</string>
+    <string name="add_user_member">添加家庭成员</string>
+    <string name="member_name">姓名</string>
+    <string name="member_relation">成员关系</string>
+    <string name="member_gender">性别</string>
+    <string name="member_marriage">婚姻状况</string>
+    <string name="member_birthday">生日</string>
+    <string name="member_mobile">手机号码</string>
+    <string name="member_idtype">证件类型</string>
+    <string name="member_idnumber">证件号码</string>
+    <string name="member_address">地址</string>
+    <string name="member_email">邮箱</string>
+    <string name="member_postcode">邮编</string>
+    <string name="on_add_user_member">正在添加家庭成员</string>
+    <string name="add">新增</string>
+    <string name="member_name_cannot_be_null">成员名不能为空</string>
+    <string name="member_mobile_cannot_be_null">成员手机号码不能为空</string>
+    <string name="delete">删除</string>
+    <string name="edit">编辑</string>
+    <string name="set_default">设为默认</string>
+    <string name="edit_user_member">编辑家庭成员</string>
+    <string name="update_member_success">更新家庭成员信息成功</string>
+    <string name="update_member_failed">更新家庭成员信息失败</string>
+    <string name="on_update_user_member">正在更新家庭成员信息</string>
+    <string name="on_delete_user_member">正在删除用户信息</string>
+    <string name="delete_user_member_failed">删除家庭成员信息失败</string>
+    <string name="delete_user_member_success">删除家庭成员信息成功</string>
+    <string name="select_user_member">选择就诊人</string>
+
+</resources>

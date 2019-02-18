@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <include layout="@layout/common_titlebar" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLremind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@drawable/selector_servie_title"
+        app:tabSelectedTextColor="@drawable/selector_servie_title"
+        app:tabMode="fixed"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpRemind"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

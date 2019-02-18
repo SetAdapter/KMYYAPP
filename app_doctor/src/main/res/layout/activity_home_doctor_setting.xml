@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background">
+
+    <include layout="@layout/app_base_title"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_size"
+        android:background="@color/divider"
+        android:layout_marginTop="10dp"/>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <!--家庭医生开通 -->
+        <LinearLayout
+            android:id="@+id/ll_family_doctor_open"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height"
+            android:background="@drawable/layout_click_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="家庭医生"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/big_font_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是否开通"
+                android:layout_marginRight="12dp"
+                android:textColor="@color/primary_text_color"/>
+            <CheckBox
+                android:id="@+id/switch_open"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/selector_switch"
+                android:button="@null"
+                android:layout_marginRight="10dp"
+                android:enabled="true" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_size"
+            android:background="@color/divider" />
+    <!--设置工作时间 -->
+    <LinearLayout
+        android:id="@+id/set_worktime"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@drawable/layout_click_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/worktime_setting"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/big_font_size" />
+        <TextView
+            android:id="@+id/tv_work_time_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unsetting"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/app_color_string"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_unselect" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_size"
+        android:background="@color/divider" />
+    <!--免费券 -->
+    <LinearLayout
+        android:id="@+id/free_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@drawable/layout_click_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/free_ticket"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/big_font_size" />
+
+        <CheckBox
+            android:id="@+id/switch_free_ticket"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_switch"
+            android:button="@null"
+            android:layout_marginRight="10dp"
+            android:enabled="true" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_size"
+        android:background="@color/divider" />
+    <!--看诊地址 -->
+    <LinearLayout
+        android:id="@+id/address_setting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@drawable/layout_click_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:visibility="gone">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/address_setting"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/big_font_size" />
+        <TextView
+            android:id="@+id/tv_address_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unsetting"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/app_color_string"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_unselect" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_size"
+        android:background="@color/divider" />
+    <!--开通周期价格人数 -->
+    <LinearLayout
+        android:id="@+id/price_people"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@drawable/layout_click_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/price_people"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/big_font_size" />
+        <TextView
+            android:id="@+id/tv_price_people_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unsetting"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/app_color_string"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_unselect" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_size"
+        android:background="@color/divider" />
+    <!--视话问诊次数 -->
+    <LinearLayout
+        android:id="@+id/video_phone_count"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@drawable/layout_click_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/video_phone_count"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/big_font_size" />
+        <TextView
+            android:id="@+id/tv_video_phone_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unsetting"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/app_color_string"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_unselect" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_size"
+        android:background="@color/divider" />
+    <!--自动回复语 -->
+    <LinearLayout
+        android:id="@+id/atuo_replay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@drawable/layout_click_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/auto_reply"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/big_font_size" />
+        <TextView
+            android:id="@+id/tv_auto_relay_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unsetting"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/app_color_string"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_unselect" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_size"
+        android:background="@color/divider" />
+    <!--其他服务 -->
+    <LinearLayout
+        android:id="@+id/orther_service"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@drawable/layout_click_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/order_service"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/big_font_size" />
+        <TextView
+            android:id="@+id/tv_order_service_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unsetting"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/app_color_string"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_unselect" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_size"
+        android:background="@color/divider" />
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <!--协议-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginTop="10dp"
+                >
+                <CheckBox
+                    android:id="@+id/cb_select_protocol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_pro_selector"
+                    android:layout_marginRight="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/agree_protocol"
+                    android:textSize="@dimen/small_font_size"
+                    />
+                <TextView
+                    android:id="@+id/tv_home_doctor_protocol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_doctor_protocol"
+                    android:textColor="#0accce"
+                    android:textSize="@dimen/small_font_size"/>
+             </LinearLayout>
+            <Button
+                android:layout_marginTop="13dp"
+                android:id="@+id/btn_open_service"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/open_service"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/app_btn"
+                android:textSize="@dimen/large_font_size"
+                android:textColor="@color/white"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+
+</LinearLayout>

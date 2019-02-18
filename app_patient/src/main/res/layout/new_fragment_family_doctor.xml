@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eef1f6"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/iv_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:background="@drawable/banner_2"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/doctor_tz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:focusable="true"
+                    android:padding="15dp"
+                    android:scaleType="center"
+                    android:src="@drawable/news" />
+
+                <TextView
+                    android:id="@+id/tabNewMsg"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/shape_new_msg_bg"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="8"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/small_font_size"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/wywz"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="240dp"
+                android:background="@drawable/main_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/doctor_s"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="我的家庭医生"
+                    android:textColor="#333333"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/health_report"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_bg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/jkbg_s"
+                        android:text="健康报告" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/zytz"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_bg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/zytz_ss"
+                        android:text="中医体质" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/myService"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_bg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/qyfw"
+                        android:text="签约服务包" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/zzzc"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_bg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/zzzc_ss"
+                        android:text="症状自诊" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.kmwlyy.patient.kdoctor.CartoonView
+        android:id="@+id/cartoonView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:visibility="visible" />
+</RelativeLayout>

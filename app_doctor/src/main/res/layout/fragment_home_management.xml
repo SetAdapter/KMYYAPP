@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+    <!--添加成员-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/color_main_white"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_add_member"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_border_shape"
+            android:drawableLeft="@mipmap/img_add"
+            android:gravity="center_vertical"
+            android:paddingLeft="45dp"
+            android:text="@string/add_member"
+            android:textColor="@color/color_button_green"
+            android:textSize="@dimen/middle_font_size" />
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/ll_fragment_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <com.winson.ui.widget.listview.PageListView
+        android:id="@+id/lv_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.winson.ui.widget.listview.PageListView>
+
+</LinearLayout>
+
+
+</LinearLayout>

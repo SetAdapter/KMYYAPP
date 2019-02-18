@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+                android:background="#ffffff"
+              android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center"
+            android:id="@+id/signed_tv"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:text="签约"/>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/clear_tv"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:text="清除"/>
+
+    </RelativeLayout>
+
+
+    <!--<View-->
+       <!--android:layout_below="@+id/clear_tv"-->
+        <!--android:id="@+id/line"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#dcdcdc"/>-->
+
+    <LinearLayout
+        android:layout_below="@+id/rl_top"
+        android:layout_above="@+id/confirm_btn"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="match_parent">
+        <com.kmwlyy.patient.weight.doodleview.DoodleView
+            android:id="@+id/doodle_doodleview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/confirm_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:background="@drawable/bg_btn_default"
+        android:text="提交"/>
+
+</RelativeLayout>

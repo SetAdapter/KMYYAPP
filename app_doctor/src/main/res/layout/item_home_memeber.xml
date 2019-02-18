@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_person_info"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/layout_click_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/img_member" />
+
+        <TextView
+            android:id="@+id/tv_item_member_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="@string/person_info"
+            android:textColor="@color/color_main_string"
+            android:textSize="@dimen/big_font_size" />
+        <TextView
+            android:layout_marginRight="12dp"
+            android:id="@+id/tv_item_member_relationship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_tag_string"
+            android:text="配偶"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@mipmap/icon_right" />
+    </LinearLayout>
+
+</LinearLayout>

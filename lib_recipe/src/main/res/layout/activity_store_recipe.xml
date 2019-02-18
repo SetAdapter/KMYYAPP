@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <com.winson.ui.widget.ChildClickableLinearLayout
+            android:id="@+id/ll_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/app_color_white"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/color_sub_string"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/string_store"/>
+
+                <TextView
+                    android:id="@+id/tv_store_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/color_main_string"/>
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/big_font_size"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_color_string_4"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/app_color_white"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/color_sub_string"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/string_patient_name"/>
+
+                <TextView
+                    android:id="@+id/tv_patient"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/color_main_string"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/color_sub_string"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/string_sex"/>
+
+                <TextView
+                    android:id="@+id/tv_sex"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/color_main_string"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/color_sub_string"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/string_recipe_age"/>
+
+                <TextView
+                    android:id="@+id/tv_age"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/color_main_string"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/app_color_white"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/color_sub_string"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/string_amount"/>
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/color_main_string"/>
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/color_sub_string"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/string_yuan"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/color_sub_string"
+                    android:gravity="right"
+                    android:text="@string/string_dealtime"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_deal_time"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="@dimen/big_font_size"
+                    android:textColor="@color/color_main_string"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_cn_layout"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View style="@style/dividing_line"
+                    android:layout_alignParentBottom="true"/>
+
+                <View style="@style/dividing_line"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="10dp"/>
+
+                <LinearLayout
+                    android:id="@+id/rl_cn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app_color_white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_cn_diag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/string_ds_diagnosis"
+                        android:textSize="@dimen/big_font_size"
+                        android:textColor="@color/color_sub_string"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/app_color_string_4"/>
+
+                    <doctor.kmwlyy.com.recipe.View.MyListView
+                        android:id="@+id/lv_cn_diagnosis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></doctor.kmwlyy.com.recipe.View.MyListView>
+                </LinearLayout>
+
+                <View style="@style/dividing_line"
+                    android:layout_alignParentBottom="true"/>
+
+                <View style="@style/dividing_line"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="10dp"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_cn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app_color_white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/string_drug_detail"
+                        android:textSize="@dimen/big_font_size"
+                        android:textColor="@color/color_sub_string"
+                        android:layout_marginLeft="15dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/app_color_string_4"/>
+
+                    <doctor.kmwlyy.com.recipe.View.MyListView
+                        android:id="@+id/lv_cn_druglist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></doctor.kmwlyy.com.recipe.View.MyListView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/app_color_string_4"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:background="@color/app_color_white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/string_unit6a"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:textSize="@dimen/big_font_size"
+                            android:textColor="@color/color_sub_string"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:text="@string/string_unit7"
+                            android:background="@drawable/tv_shape"
+                            android:textSize="@dimen/big_font_size"
+                            android:textColor="@color/color_main_string"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/tv_jishu"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="35dp"
+                            android:gravity="center_vertical"
+                            android:inputType="number"
+                            android:paddingLeft="10dp"
+                            android:textSize="@dimen/big_font_size"
+                            android:background="@drawable/et_shape"/>
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/tv_shape"
+                            android:text="@string/string_unit8"
+                            android:textSize="@dimen/big_font_size"
+                            android:textColor="@color/color_main_string"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@color/app_color_white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/string_usagea"
+                            android:textSize="@dimen/big_font_size"
+                            android:textColor="@color/color_sub_string"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center_vertical"/>
+
+                        <EditText
+                            android:id="@+id/et_usage"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="35dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:textSize="@dimen/big_font_size"
+                            android:background="@drawable/et_shape"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/cn_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/app_color_string"
+                        android:textSize="17sp"
+                        android:layout_gravity="right"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_en_layout"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View style="@style/dividing_line"
+                    android:layout_alignParentBottom="true"/>
+
+                <View style="@style/dividing_line"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="10dp"/>
+
+                <LinearLayout
+                    android:id="@+id/rl_en"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app_color_white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_en_diag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/string_ds_diagnosis"
+                        android:textSize="@dimen/big_font_size"
+                        android:textColor="@color/color_sub_string"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/app_color_string_4"/>
+
+                    <doctor.kmwlyy.com.recipe.View.MyListView
+                        android:id="@+id/lv_en_diagnosis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </doctor.kmwlyy.com.recipe.View.MyListView>
+                </LinearLayout>
+
+                <View style="@style/dividing_line"
+                    android:layout_alignParentBottom="true"/>
+
+                <View style="@style/dividing_line"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="10dp"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_en"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app_color_white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/string_drug_detail"
+                        android:textSize="@dimen/big_font_size"
+                        android:textColor="@color/color_sub_string"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/app_color_string_4"/>
+
+                    <doctor.kmwlyy.com.recipe.View.MyListView
+                        android:id="@+id/lv_en_druglist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></doctor.kmwlyy.com.recipe.View.MyListView>
+
+                    <TextView
+                        android:id="@+id/en_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/app_color_string"
+                        android:textSize="17sp"
+                        android:layout_gravity="right"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </com.winson.ui.widget.ChildClickableLinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_operation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <Button
+            android:id="@+id/btn_no"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/string_recipe_no"
+            android:textColor="@color/app_color_white"
+            android:background="@drawable/orange_btn_selector"
+            />
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="@string/string_recipe_yes"
+            android:textColor="@color/app_color_white"
+            android:background="@drawable/green_btn_selector"/>
+    </LinearLayout>
+</LinearLayout>

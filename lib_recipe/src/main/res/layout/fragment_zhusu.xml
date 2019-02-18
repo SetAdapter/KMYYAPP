@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_main_bg"
+        android:gravity="center_horizontal">
+
+        <View style="@style/dividing_line"
+            android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/app_color_white"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_tag_string"
+                android:textSize="@dimen/big_font_size"
+                android:text="@string/string_Sympton"/>
+                android:textColorHint="@color/color_sub_string"/>
+            <EditText
+                android:id="@+id/et_ZhuSu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|top"
+                android:background="@null"
+                android:textColor="@color/color_main_string"
+                android:textSize="@dimen/big_font_size"
+                android:hint="@string/string_Sympton_hint"
+                android:textColorHint="@color/color_sub_string"/>
+        </LinearLayout>
+        <View style="@style/dividing_line"/>
+
+        <View style="@style/dividing_line"
+            android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/app_color_white"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_tag_string"
+                android:textSize="@dimen/big_font_size"
+                android:text="@string/string_PresentHistoryIllness"/>
+            <EditText
+                android:id="@+id/et_present"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|top"
+                android:background="@null"
+                android:textColor="@color/color_main_string"
+                android:textSize="@dimen/big_font_size"
+                android:hint="@string/string_PresentHistoryIllness_hint"
+                android:textColorHint="@color/color_sub_string"/>
+        </LinearLayout>
+        <View style="@style/dividing_line"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/app_color_white"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_tag_string"
+                android:textSize="@dimen/big_font_size"
+                android:text="@string/string_AllergicHistory"/>
+            <EditText
+                android:id="@+id/et_allergic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|top"
+                android:background="@null"
+                android:textColor="@color/color_main_string"
+                android:textSize="@dimen/big_font_size"
+                android:hint="@string/string_AllergicHistory_hint"
+                android:textColorHint="@color/color_sub_string"/>
+        </LinearLayout>
+        <View style="@style/dividing_line"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/app_color_white"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_tag_string"
+                android:textSize="@dimen/big_font_size"
+                android:text="@string/string_PastMedicalHistory"/>
+            <EditText
+                android:id="@+id/et_past"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|top"
+                android:background="@null"
+                android:textColor="@color/color_main_string"
+                android:textSize="@dimen/big_font_size"
+                android:hint="@string/string_PastMedicalHistory_hint"
+                android:textColorHint="@color/color_sub_string"/>
+        </LinearLayout>
+        <View style="@style/dividing_line"/>
+
+        <View style="@style/dividing_line"
+            android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/app_color_white"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_tag_string"
+                android:textSize="@dimen/big_font_size"
+                android:text="@string/string_chubu"/>
+            <EditText
+                android:id="@+id/et_chubu"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:gravity="left|top"
+                android:background="@null"
+                android:textSize="@dimen/big_font_size"
+                android:hint="@string/string_chubu_hint"
+                android:textColorHint="@color/color_sub_string"/>
+        </LinearLayout>
+        <View style="@style/dividing_line"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/app_color_white"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_tag_string"
+                android:textSize="@dimen/big_font_size"
+                android:text="@string/string_Advised"/>
+            <EditText
+                android:id="@+id/et_advise"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:gravity="left|top"
+                android:background="@null"
+                android:textSize="@dimen/big_font_size"
+                android:hint="@string/string_Advised_hint"
+                android:textColorHint="@color/color_sub_string"/>
+        </LinearLayout>
+        <View style="@style/dividing_line"/>
+
+
+    </LinearLayout>
+</ScrollView>

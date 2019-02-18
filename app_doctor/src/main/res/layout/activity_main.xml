@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_main_bg"
+    tools:context="com.kmwlyy.doctor.Activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:persistentDrawingCache="animation" />
+    </LinearLayout>
+
+    <View style="@style/tag_bar_line"/>
+
+    <RelativeLayout
+        android:id="@+id/rel_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/btn_clinic"
+                style="@style/main_tab_bottom"
+                android:button="@null"
+                android:drawableTop="@drawable/radiobutton_selector1"
+                android:checked="true"
+                android:text="@string/string_tab_clinic"
+                android:textSize="@dimen/mini_font_size"
+                android:textColor="@drawable/selector_main_tab_text_bg" />
+
+            <RadioButton
+                android:id="@+id/btn_question"
+                style="@style/main_tab_bottom"
+                android:button="@null"
+                android:drawableTop="@drawable/radiobutton_selector2"
+                android:text="@string/string_tab_room"
+                android:textSize="@dimen/mini_font_size"
+                android:textColor="@drawable/selector_main_tab_text_bg" />
+
+            <RadioButton
+                android:id="@+id/btn_ask"
+                style="@style/main_tab_bottom"
+                android:button="@null"
+                android:drawableTop="@drawable/radiobutton_selector3"
+                android:text="@string/string_tab_service"
+                android:textSize="@dimen/mini_font_size"
+                android:textColor="@drawable/selector_main_tab_text_bg" />
+
+            <RadioButton
+                android:id="@+id/btn_center"
+                style="@style/main_tab_bottom"
+                android:button="@null"
+                android:drawableTop="@drawable/radiobutton_selector4"
+                android:text="@string/string_tab_center"
+                android:textSize="@dimen/mini_font_size"
+                android:textColor="@drawable/selector_main_tab_text_bg" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <include layout="@layout/sign_recipe_layout"/>
+</LinearLayout>

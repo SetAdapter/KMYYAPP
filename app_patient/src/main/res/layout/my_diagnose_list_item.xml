@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_diagnose_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/patient_loading"
+            android:textSize="@dimen/big_font_size"
+          android:textColor="@color/color_tag_string"
+          />
+
+        <TextView
+            android:id="@+id/tv_diagnose_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/patient_loading"
+          android:textSize="@dimen/middle_font_size"
+          android:textColor="@color/color_tag_string"
+          />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_size"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_diagnose_use"
+            android:layout_width="match_parent"
+            android:minHeight="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="@string/patient_loading"
+          android:textSize="@dimen/big_font_size"
+          android:textColor="@color/color_main_string"
+          />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_size"
+        android:background="@color/divider" />
+
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingBottom="10dp"
+          android:paddingLeft="12dp"
+          android:paddingRight="12dp"
+          android:paddingTop="10dp"
+          android:layout_centerVertical="true"
+          android:gravity="right|center_vertical"
+          android:orientation="horizontal"
+>
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:singleLine="true"
+              android:text="@string/order_total"
+              android:textSize="@dimen/middle_font_size"
+              android:textColor="@color/color_tag_string"
+              />
+            <TextView
+              android:id="@+id/tv_drug_number"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:singleLine="true"
+              android:text="@string/patient_loading"
+              android:textSize="@dimen/big_font_size"
+              android:textColor="@color/color_tag_string"
+              />
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:singleLine="true"
+              android:text="@string/commodity_num"
+              android:textSize="@dimen/middle_font_size"
+              android:textColor="@color/color_tag_string"
+              />
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:singleLine="true"
+              android:layout_marginLeft="3dp"
+              android:text="@string/order_total_money"
+              android:textSize="@dimen/middle_font_size"
+              android:textColor="@color/color_tag_string"
+              />
+            <TextView
+              android:id="@+id/tv_drug_amount"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:singleLine="true"
+              android:text="@string/patient_loading"
+              android:textSize="@dimen/big_font_size"
+              android:textColor="@color/primary_text_color"
+              />
+        </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_size"
+        android:background="@color/divider" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        >
+        <TextView
+            android:id="@+id/btn_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:text="@string/patient_loading"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_follow"
+            android:paddingBottom="5dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/primary_press_color"
+            android:textSize="@dimen/small_font_size"
+            />
+
+        <TextView
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:layout_toLeftOf="@id/btn_buy"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_unfollow"
+            android:paddingBottom="5dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="5dp"
+            android:text="@string/delete_order"
+            android:textColor="@color/third_text_color"
+            android:textSize="@dimen/small_font_size"
+            />
+
+    </RelativeLayout>>
+
+
+</LinearLayout>

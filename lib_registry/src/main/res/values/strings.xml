@@ -1,0 +1,113 @@
+<resources>
+
+    <string name="empty"> </string>
+    <string name="master_aesculapius">主任医师</string>
+    <string name="minor_aesculapius">副主任医师</string>
+    <string name="master_treat_doctor">主治医师</string>
+    <string name="aesculapius">医师</string>
+    <string name="feldsher">医士</string>
+    <string name="associate_chief_pharmacist">副主任药师</string>
+    <string name="master_apothecary">主任药师</string>
+    <string name="primary_apothecary">主管药师</string>
+    <string name="apothecary">药师</string>
+    <string name="pharmacist">药士</string>
+    <string name="none">暂无</string>
+    <string name="artificer">技师</string>
+    <string name="minor_nurse">副主任护师</string>
+    <string name="master_nurse">主任护师</string>
+    <string name="master_manager_nurse">主管护师</string>
+    <string name="primary_nurse">护师</string>
+    <string name="nurse">护士</string>
+    <string name="minor_inspect_artificer">副主任检验技师</string>
+    <string name="primary_docimaster">主管检验师</string>
+    <string name="docimaster">检验师</string>
+    <string name="minor_artificer">副主任技师</string>
+    <string name="master_artificer">主任技师</string>
+    <string name="primary_manager_artificer">主管技师</string>
+    <string name="assistant_experts">技士</string>
+    <string name="boffin">研究员</string>
+    <string name="professor">教授</string>
+    <string name="adjunct_professor">副教授</string>
+    <string name="house_staff">住院医师</string>
+
+    <string name="confirm_register">确认预约</string>
+
+    <string name="visit_hospital">就诊医院</string>
+    <string name="visit_department">就诊科室 </string>
+    <string name="visit_doctor">就诊医生 </string>
+    <string name="doctor_title">医生职称 </string>
+    <string name="expenses">费用 </string>
+    <string name="money">&#160;&#160;元</string>
+    <string name="leave_signal_resource">%1$s-%2$s    剩余号源 %3$s 个</string>
+    <string name="have_no_signal">该时段没有号了</string>
+    <string name="duration_format">%1$s-%2$s</string>
+    <string name="select_visit_member">请选择就诊人</string>
+    <string name="select_visit_duration">请选择就诊时段</string>
+    <string name="on_submit">正在提交&#8230;&#8230;&#8230;</string>
+    <string name="register_success">预约成功</string>
+
+    <string name="r_reg">挂号</string>
+    <string name="r_price">价格</string>
+    <string name="registration_form">挂号单 </string>
+    <string name="r_patient">患者 </string>
+    <string name="cancel_success">取消成功 </string>
+    <string name="r_doctor">医生 </string>
+    <string name="r_member">就诊人&#160;</string>
+    <string name="r_member_flag">就诊人:&#160;</string>
+    <string name="r_duration">就诊时间&#160;</string>
+    <string name="r_take_no_pwd">取号密码&#160;</string>
+    <string name="register_expenses">挂号费&#160;</string>
+    <string name="system_notify">系统提示</string>
+    <string name="signal_is_less">号源很宝贵， 确定取消？</string>
+    <string name="r_confirm">确定 </string>
+    <string name="r_cancel">取消</string>
+
+    <string name="r_have_cancel">已取消</string>
+    <string name="r_have_stop">已停诊</string>
+    <string name="r_cancel_register">取消预约</string>
+    <string name="r_have_payed">已支付</string>
+    <string name="r_have_break_appointment">已爽约</string>
+    <string name="r_have_take_no">已取号</string>
+    <string name="r_have_use">已就诊</string>
+    <string name="r_have_expired">已过期</string>
+    <string name="r_have_close">已关闭</string>
+    <string name="r_select_member">请选择就诊诊人</string>
+    <string name="r_id_num">身份证号</string>
+    <string name="r_phone">手机号码</string>
+    <string name="r_visit_duration">就诊时段</string>
+    <string name="r_select">请选择</string>
+    <string name="r_hospital">医院</string>
+    <string name="r_time">时间</string>
+    <string name="r_pwd">密码</string>
+    <string name="r_money">金额</string>
+
+    <string name="r_doctor_schedule">医生排班</string>
+    <string name="r_leave">%1$s %2$s  剩余:%3$s</string>
+    <string name="r_money_flag">￥</string>
+    <string name="r_full_register">约满</string>
+    <string name="r_surplus_register">有号</string>
+    <string name="r_register">预约</string>
+    <string name="r_select_city">选择城市</string>
+    <string name="r_select_department">选择科室</string>
+    <string name="r_select_doctor">选择医生</string>
+    <string name="r_register_no">预约挂号</string>
+    <string name="r_person_signal_resources">&#160;&#160;个可预约号源</string>
+
+
+    <string name="hotCity">热门城市</string>
+    <string name="get_location">定位中...</string>
+    <string name="get_location_fail">暂时无法获得您的位置</string>
+    <string name="change_location">您当前定位城市是%1$s，是否切换？</string>
+
+
+    <string name="r_diagnose_card">就诊卡</string>
+    <string name="r_input_diagnose_card">请输入医院就诊卡号</string>
+    <string name="r_diagnose_password">就诊卡密码</string>
+    <string name="r_input_diagnose_password">请输入就诊卡号密码</string>
+    <string name="r_first_diagnose">初诊</string>
+    <string name="r_return_diagnose">复诊</string>
+
+
+    <string name="r_get_net_data">正在请求数据...</string>
+
+</resources>
